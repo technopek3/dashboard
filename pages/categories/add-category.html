@@ -145,7 +145,7 @@ License: For each use you must have a valid license purchased only from above li
               data-kt-scroll-wrappers="#kt_aside_menu"
               data-kt-scroll-offset="0"
             >
-                <!--begin::Menu-->
+               <!--begin::Menu-->
               <div
                 class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500"
                 id="#kt_aside_menu"
@@ -210,7 +210,7 @@ License: For each use you must have a valid license purchased only from above li
                   </span>
                   <div class="menu-sub menu-sub-accordion menu-active-bg">
                     <div class="menu-item">
-                          <a class="menu-link active" href="./pages/categories/categories.html">
+                          <a class="menu-link active" href="./apps/ecommerce/catalog/categories.html">
                         <span class="menu-bullet">
                           <i class="bi bi-bookmarks"></i>
                         </span>
@@ -218,7 +218,7 @@ License: For each use you must have a valid license purchased only from above li
                       </a>
                     </div>
                      <div class="menu-item">
-                          <a class="menu-link active" href="./pages/products/products.html">
+                          <a class="menu-link active" href="./apps/ecommerce/catalog/products.html">
                         <span class="menu-bullet">
                           <i class="bi bi-boxes"></i>
                         </span>
@@ -227,7 +227,7 @@ License: For each use you must have a valid license purchased only from above li
                     </div>
 
                     <div class="menu-item">
-                          <a class="menu-link active" href="./pages/users/list.html">
+                          <a class="menu-link active" href="./apps/user-management/users/list.html">
                         <span class="menu-bullet">
                           <i class="bi bi-people"></i>
                         </span>
@@ -243,6 +243,7 @@ License: For each use you must have a valid license purchased only from above li
             <!--end::Aside Menu-->
           </div>
           <!--end::Aside menu-->
+        
         </div>
         <!--end::Aside-->
         <!--begin::Wrapper-->
@@ -2259,7 +2260,7 @@ License: For each use you must have a valid license purchased only from above li
                                   </div>
                                   <div class="menu-item">
                                     <a
-                                      class="menu-link active py-3"
+                                      class="menu-link py-3"
                                       href="../../demo1/dist/apps/ecommerce/catalog/add-product.html"
                                     >
                                       <span class="menu-bullet">
@@ -2285,7 +2286,7 @@ License: For each use you must have a valid license purchased only from above li
                                   </div>
                                   <div class="menu-item">
                                     <a
-                                      class="menu-link py-3"
+                                      class="menu-link active py-3"
                                       href="../../demo1/dist/apps/ecommerce/catalog/add-category.html"
                                     >
                                       <span class="menu-bullet">
@@ -7018,7 +7019,7 @@ License: For each use you must have a valid license purchased only from above li
                   <h1
                     class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"
                   >
-                    New product
+                    Add Category
                   </h1>
                   <!--end::Title-->
                   <!--begin::Separator-->
@@ -7043,24 +7044,22 @@ License: For each use you must have a valid license purchased only from above li
                     </li>
                     <!--end::Item-->
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-muted">products</li>
+                    <li class="breadcrumb-item text-muted">categories</li>
                     <!--end::Item-->
+                    
                     <!--begin::Item-->
                     <li class="breadcrumb-item">
                       <span class="bullet bg-gray-300 w-5px h-2px"></span>
                     </li>
                     <!--end::Item-->
-                    
-                    
-                    <!--end::Item-->
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-dark">Add Product</li>
+                    <li class="breadcrumb-item text-dark">Add Category</li>
                     <!--end::Item-->
                   </ul>
                   <!--end::Breadcrumb-->
                 </div>
                 <!--end::Page title-->
-               
+              
               </div>
               <!--end::Container-->
             </div>
@@ -7069,11 +7068,10 @@ License: For each use you must have a valid license purchased only from above li
             <div class="post d-flex flex-column-fluid" id="kt_post">
               <!--begin::Container-->
               <div id="kt_content_container" class="container-xxl">
-                <!--begin::Form-->
                 <form
-                  id="kt_ecommerce_add_product_form"
+                  id="kt_ecommerce_add_category_form"
                   class="form d-flex flex-column flex-lg-row"
-                  data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/products.html"
+                  data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/category.html"
                 >
                   <!--begin::Aside column-->
                   <div
@@ -7112,7 +7110,9 @@ License: For each use you must have a valid license purchased only from above li
                             data-bs-toggle="tooltip"
                             title="Change avatar"
                           >
+                            <!--begin::Icon-->
                             <i class="bi bi-pencil-fill fs-7"></i>
+                            <!--end::Icon-->
                             <!--begin::Inputs-->
                             <input
                               type="file"
@@ -7147,943 +7147,122 @@ License: For each use you must have a valid license purchased only from above li
                         <!--end::Image input-->
                         <!--begin::Description-->
                         <div class="text-muted fs-7">
-                          Set the product thumbnail image. Only *.png, *.jpg and
-                          *.jpeg image files are accepted
+                          Set the category thumbnail image. Only *.png, *.jpg
+                          and *.jpeg image files are accepted
                         </div>
                         <!--end::Description-->
                       </div>
                       <!--end::Card body-->
                     </div>
                     <!--end::Thumbnail settings-->
-                    <!--begin::Status-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Status</h2>
-                        </div>
-                        <!--end::Card title-->
-                        <!--begin::Card toolbar-->
-                        <div class="card-toolbar">
-                          <div
-                            class="rounded-circle bg-success w-15px h-15px"
-                            id="kt_ecommerce_add_product_status"
-                          ></div>
-                        </div>
-                        <!--begin::Card toolbar-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body pt-0">
-                        <!--begin::Select2-->
-                        <select
-                          class="form-select mb-2"
-                          data-control="select2"
-                          data-hide-search="true"
-                          data-placeholder="Select an option"
-                          id="kt_ecommerce_add_product_status_select"
-                        >
-                          <option></option>
-                          <option value="published" selected="selected">
-                            Published
-                          </option>
-                          <option value="draft">Draft</option>
-                          <option value="scheduled">Scheduled</option>
-                          <option value="inactive">Inactive</option>
-                        </select>
-                        <!--end::Select2-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Set the product status.
-                        </div>
-                        <!--end::Description-->
-                        <!--begin::Datepicker-->
-                        <div class="d-none mt-10">
-                          <label
-                            for="kt_ecommerce_add_product_status_datepicker"
-                            class="form-label"
-                            >Select publishing date and time</label
-                          >
-                          <input
-                            class="form-control"
-                            id="kt_ecommerce_add_product_status_datepicker"
-                            placeholder="Pick date &amp; time"
-                          />
-                        </div>
-                        <!--end::Datepicker-->
-                      </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Status-->
-
-                    <!--begin::Confirmation-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Confirmation</h2>
-                        </div>
-                        <!--end::Card title-->
-                        <!--begin::Card toolbar-->
-                        <div class="card-toolbar">
-                          <div
-                            class="rounded-circle bg-primary w-15px h-15px"
-                            id="kt_ecommerce_add_product_status"
-                          ></div>
-                        </div>
-                        <!--begin::Card toolbar-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body pt-0">
-                        <!--begin::Select2-->
-                        <select
-                          class="form-select mb-2"
-                          data-control="select2"
-                          data-hide-search="true"
-                          data-placeholder="Select an option"
-                          id="kt_ecommerce_add_product_status_select"
-                        >
-                          <option></option>
-                          <option value="confirmed" selected>confirmed</option>
-                          <option value="not confirmed">not confirmed</option>
-                        </select>
-                        <!--end::Select2-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Set the product confirmation.
-                        </div>
-                        <!--end::Description-->
-                        <!--begin::Datepicker-->
-                        <div class="d-none mt-10">
-                          <label
-                            for="kt_ecommerce_add_product_status_datepicker"
-                            class="form-label"
-                            >Select publishing date and time</label
-                          >
-                          <input
-                            class="form-control"
-                            id="kt_ecommerce_add_product_status_datepicker"
-                            placeholder="Pick date &amp; time"
-                          />
-                        </div>
-                        <!--end::Datepicker-->
-                      </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Confirmation-->
-
-                    <!--begin::Category & tags-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Product Details</h2>
-                        </div>
-                        <!--end::Card title-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body pt-0">
-                        <!--begin::Input group-->
-                        <!--begin::Label-->
-                        <label class="form-label">Categories</label>
-                        <!--end::Label-->
-                        <!--begin::Select2-->
-                        <select
-                          class="form-select mb-2"
-                          data-control="select2"
-                          data-placeholder="Select an option"
-                          data-allow-clear="true"
-                          multiple="multiple"
-                        >
-                          <option></option>
-                          <option value="Computers">Computers</option>
-                          <option value="Watches">Watches</option>
-                          <option value="Headphones">Headphones</option>
-                          <option value="Footwear">Footwear</option>
-                          <option value="Cameras">Cameras</option>
-                          <option value="Shirts">Shirts</option>
-                          <option value="Household">Household</option>
-                          <option value="Handbags">Handbags</option>
-                          <option value="Wines">Wines</option>
-                          <option value="Sandals">Sandals</option>
-                        </select>
-                        <!--end::Select2-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7 mb-7">
-                          Add product to a category.
-                        </div>
-                        <!--end::Description-->
-                        <!--end::Input group-->
-                        <!--begin::Button-->
-                        <a
-                          href="../../demo1/dist/apps/ecommerce/catalog/add-category.html"
-                          class="btn btn-light-primary btn-sm mb-10"
-                        >
-                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                          <span class="svg-icon svg-icon-2">
-                            <svg
-                              xmlns="http://www.w3.org/2000/svg"
-                              width="24"
-                              height="24"
-                              viewBox="0 0 24 24"
-                              fill="none"
-                            >
-                              <rect
-                                opacity="0.5"
-                                x="11"
-                                y="18"
-                                width="12"
-                                height="2"
-                                rx="1"
-                                transform="rotate(-90 11 18)"
-                                fill="black"
-                              />
-                              <rect
-                                x="6"
-                                y="11"
-                                width="12"
-                                height="2"
-                                rx="1"
-                                fill="black"
-                              />
-                            </svg>
-                          </span>
-                          <!--end::Svg Icon-->Create new category</a
-                        >
-                        <!--end::Button-->
-                        <!--begin::Input group-->
-                        <!--begin::Label-->
-                        <label class="form-label d-block">Tags</label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
-                        <input
-                          id="kt_ecommerce_add_product_tags"
-                          name="kt_ecommerce_add_product_tags"
-                          class="form-control mb-2"
-                          value=""
-                        />
-                        <!--end::Input-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Add tags to a product.
-                        </div>
-                        <!--end::Description-->
-                        <!--end::Input group-->
-                      </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Category & tags-->
                   </div>
                   <!--end::Aside column-->
                   <!--begin::Main column-->
                   <div
                     class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10"
                   >
-                    <!--begin:::Tabs-->
-                    <ul
-                      class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-bold mb-n2"
-                    >
-                      <!--begin:::Tab item-->
-                      <li class="nav-item">
-                        <a
-                          class="nav-link text-active-primary pb-4 active"
-                          data-bs-toggle="tab"
-                          href="#kt_ecommerce_add_product_general"
-                          >General</a
-                        >
-                      </li>
-                      <!--end:::Tab item-->
-                      <!--begin:::Tab item-->
-                      <li class="nav-item">
-                        <a
-                          class="nav-link text-active-primary pb-4"
-                          data-bs-toggle="tab"
-                          href="#kt_ecommerce_add_product_advanced"
-                          >Advanced</a
-                        >
-                      </li>
-                      <!--end:::Tab item-->
-                    </ul>
-                    <!--end:::Tabs-->
-                    <!--begin::Tab content-->
-                    <div class="tab-content">
-                      <!--begin::Tab pane-->
-                      <div
-                        class="tab-pane fade show active"
-                        id="kt_ecommerce_add_product_general"
-                        role="tab-panel"
-                      >
-                        <div class="d-flex flex-column gap-7 gap-lg-10">
-                          <!--begin::General options-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>General</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Product Name</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="product_name"
-                                  class="form-control mb-2"
-                                  placeholder="Product name"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  A product name is required and recommended to
-                                  be unique.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div>
-                                <!--begin::Label-->
-                                <label class="form-label">Description</label>
-                                <!--end::Label-->
-                                <!--begin::Editor-->
-                                <div
-                                  id="kt_ecommerce_add_product_description"
-                                  name="kt_ecommerce_add_product_description"
-                                  class="min-h-200px mb-2"
-                                ></div>
-                                <!--end::Editor-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set a description to the product for better
-                                  visibility.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::General options-->
-                          <!--begin::Media-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Media</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="fv-row mb-2">
-                                <!--begin::Dropzone-->
-                                <div
-                                  class="dropzone"
-                                  id="kt_ecommerce_add_product_media"
-                                >
-                                  <!--begin::Message-->
-                                  <div class="dz-message needsclick">
-                                    <!--begin::Icon-->
-                                    <i
-                                      class="bi bi-file-earmark-arrow-up text-primary fs-3x"
-                                    ></i>
-                                    <!--end::Icon-->
-                                    <!--begin::Info-->
-                                    <div class="ms-4">
-                                      <h3
-                                        class="fs-5 fw-bolder text-gray-900 mb-1"
-                                      >
-                                        Drop files here or click to upload.
-                                      </h3>
-                                      <span class="fs-7 fw-bold text-gray-400"
-                                        >Upload up to 10 files</span
-                                      >
-                                    </div>
-                                    <!--end::Info-->
-                                  </div>
-                                </div>
-                                <!--end::Dropzone-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Description-->
-                              <div class="text-muted fs-7">
-                                Set the product media gallery.
-                              </div>
-                              <!--end::Description-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::Media-->
-                          <!--begin::Pricing-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Pricing</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Base Price</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="price"
-                                  class="form-control mb-2"
-                                  placeholder="Product price"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set the product price.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="fv-row mb-10">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-bold mb-2"
-                                  >Discount Type
-                                  <i
-                                    class="fas fa-exclamation-circle ms-2 fs-7"
-                                    data-bs-toggle="tooltip"
-                                    title="Select a discount type that will be applied to this product"
-                                  ></i
-                                ></label>
-                                <!--End::Label-->
-                                <!--begin::Row-->
-                                <div
-                                  class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                  data-kt-buttons="true"
-                                  data-kt-buttons-target="[data-kt-button='true']"
-                                >
-                                  <!--begin::Col-->
-                                  <div class="col">
-                                    <!--begin::Option-->
-                                    <label
-                                      class="btn btn-outline btn-outline-dashed btn-outline-default active d-flex text-start p-6"
-                                      data-kt-button="true"
-                                    >
-                                      <!--begin::Radio-->
-                                      <span
-                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1"
-                                      >
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="discount_option"
-                                          value="1"
-                                          checked="checked"
-                                        />
-                                      </span>
-                                      <!--end::Radio-->
-                                      <!--begin::Info-->
-                                      <span class="ms-5">
-                                        <span
-                                          class="fs-4 fw-bolder text-gray-800 d-block"
-                                          >No Discount</span
-                                        >
-                                      </span>
-                                      <!--end::Info-->
-                                    </label>
-                                    <!--end::Option-->
-                                  </div>
-                                  <!--end::Col-->
-                                  <!--begin::Col-->
-                                  <div class="col">
-                                    <!--begin::Option-->
-                                    <label
-                                      class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                      data-kt-button="true"
-                                    >
-                                      <!--begin::Radio-->
-                                      <span
-                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1"
-                                      >
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="discount_option"
-                                          value="2"
-                                        />
-                                      </span>
-                                      <!--end::Radio-->
-                                      <!--begin::Info-->
-                                      <span class="ms-5">
-                                        <span
-                                          class="fs-4 fw-bolder text-gray-800 d-block"
-                                          >Percentage %</span
-                                        >
-                                      </span>
-                                      <!--end::Info-->
-                                    </label>
-                                    <!--end::Option-->
-                                  </div>
-                                  <!--end::Col-->
-                                  <!--begin::Col-->
-                                  <div class="col">
-                                    <!--begin::Option-->
-                                    <label
-                                      class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                      data-kt-button="true"
-                                    >
-                                      <!--begin::Radio-->
-                                      <span
-                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1"
-                                      >
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="discount_option"
-                                          value="3"
-                                        />
-                                      </span>
-                                      <!--end::Radio-->
-                                      <!--begin::Info-->
-                                      <span class="ms-5">
-                                        <span
-                                          class="fs-4 fw-bolder text-gray-800 d-block"
-                                          >Fixed Price</span
-                                        >
-                                      </span>
-                                      <!--end::Info-->
-                                    </label>
-                                    <!--end::Option-->
-                                  </div>
-                                  <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div
-                                class="d-none mb-10 fv-row"
-                                id="kt_ecommerce_add_product_discount_percentage"
-                              >
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Set Discount Percentage</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Slider-->
-                                <div
-                                  class="d-flex flex-column text-center mb-5"
-                                >
-                                  <div
-                                    class="d-flex align-items-start justify-content-center mb-7"
-                                  >
-                                    <span
-                                      class="fw-bolder fs-3x"
-                                      id="kt_ecommerce_add_product_discount_label"
-                                      >0</span
-                                    >
-                                    <span class="fw-bolder fs-4 mt-1 ms-2"
-                                      >%</span
-                                    >
-                                  </div>
-                                  <div
-                                    id="kt_ecommerce_add_product_discount_slider"
-                                    class="noUi-sm"
-                                  ></div>
-                                </div>
-                                <!--end::Slider-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set a percentage discount to be applied on
-                                  this product.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div
-                                class="d-none mb-10 fv-row"
-                                id="kt_ecommerce_add_product_discount_fixed"
-                              >
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Fixed Discounted Price</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="dicsounted_price"
-                                  class="form-control mb-2"
-                                  placeholder="Discounted price"
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set the discounted product price. The product
-                                  will be reduced at the determined fixed price
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Tax-->
-                              <div class="d-flex flex-wrap gap-5">
-                                <!--begin::Input group-->
-                                <div class="fv-row w-100 flex-md-root">
-                                  <!--begin::Label-->
-                                  <label class="required form-label"
-                                    >Tax Class</label
-                                  >
-                                  <!--end::Label-->
-                                  <!--begin::Select2-->
-                                  <select
-                                    class="form-select mb-2"
-                                    name="tax"
-                                    data-control="select2"
-                                    data-hide-search="true"
-                                    data-placeholder="Select an option"
-                                  >
-                                    <option></option>
-                                    <option value="0">Tax Free</option>
-                                    <option value="1">Taxable Goods</option>
-                                    <option value="2">
-                                      Downloadable Product
-                                    </option>
-                                  </select>
-                                  <!--end::Select2-->
-                                  <!--begin::Description-->
-                                  <div class="text-muted fs-7">
-                                    Set the product tax class.
-                                  </div>
-                                  <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="fv-row w-100 flex-md-root">
-                                  <!--begin::Label-->
-                                  <label class="form-label"
-                                    >VAT Amount (%)</label
-                                  >
-                                  <!--end::Label-->
-                                  <!--begin::Input-->
-                                  <input
-                                    type="text"
-                                    class="form-control mb-2"
-                                    value=""
-                                  />
-                                  <!--end::Input-->
-                                  <!--begin::Description-->
-                                  <div class="text-muted fs-7">
-                                    Set the product VAT about.
-                                  </div>
-                                  <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                              </div>
-                              <!--end:Tax-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::Pricing-->
+                    <!--begin::General options-->
+                    <div class="card card-flush py-4">
+                      <!--begin::Card header-->
+                      <div class="card-header">
+                        <div class="card-title">
+                          <h2>General</h2>
                         </div>
                       </div>
-                      <!--end::Tab pane-->
-                      <!--begin::Tab pane-->
-                      <div
-                        class="tab-pane fade"
-                        id="kt_ecommerce_add_product_advanced"
-                        role="tab-panel"
-                      >
-                        <div class="d-flex flex-column gap-7 gap-lg-10">
-                          <!--begin::Inventory-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Inventory</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label">SKU</label>
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="sku"
-                                  class="form-control mb-2"
-                                  placeholder="SKU Number"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Enter the product SKU.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Barcode</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="sku"
-                                  class="form-control mb-2"
-                                  placeholder="Barcode Number"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Enter the product barcode number.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Quantity</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <div class="d-flex gap-3">
-                                  <input
-                                    type="number"
-                                    name="shelf"
-                                    class="form-control mb-2"
-                                    placeholder="On shelf"
-                                    value=""
-                                  />
-                                  <input
-                                    type="number"
-                                    name="warehouse"
-                                    class="form-control mb-2"
-                                    placeholder="In warehouse"
-                                  />
-                                </div>
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Enter the product quantity.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="fv-row">
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Allow Backorders</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <div
-                                  class="form-check form-check-custom form-check-solid mb-2"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                  />
-                                  <label class="form-check-label">Yes</label>
-                                </div>
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Allow customers to purchase products that are
-                                  out of stock.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
+                      <!--end::Card header-->
+                      <!--begin::Card body-->
+                      <div class="card-body pt-0">
+                        <!--begin::Input group-->
+                        <div class="mb-10 fv-row">
+                          <!--begin::Label-->
+                          <label class="required form-label"
+                            >Category Name</label
+                          >
+                          <!--end::Label-->
+                          <!--begin::Input-->
+                          <input
+                            type="text"
+                            name="category_name"
+                            class="form-control mb-2"
+                            placeholder="Product name"
+                            value=""
+                          />
+                          <!--end::Input-->
+                          <!--begin::Description-->
+                          <div class="text-muted fs-7">
+                            A category name is required and recommended to be
+                            unique.
                           </div>
-                          <!--end::Inventory-->
-                          <!--begin::Variations-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Variations</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div
-                                class=""
-                                data-kt-ecommerce-catalog-add-product="auto-options"
-                              >
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Add Product Variations</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Repeater-->
-                                <div id="kt_ecommerce_add_product_options">
-                                  <!--begin::Form group-->
-                                  <div class="form-group">
-                                    <div
-                                      data-repeater-list="kt_ecommerce_add_product_options"
-                                      class="d-flex flex-column gap-3"
-                                    >
-                                      <div
-                                        data-repeater-item=""
-                                        class="form-group d-flex flex-wrap gap-5"
-                                      >
-                                        <!--begin::Select2-->
-                                        <div class="w-100 w-md-200px">
-                                          <select
-                                            class="form-select"
-                                            name="product_option"
-                                            data-placeholder="Select a variation"
-                                            data-kt-ecommerce-catalog-add-product="product_option"
-                                          >
-                                            <option></option>
-                                            <option value="color">Color</option>
-                                            <option value="size">Size</option>
-                                            <option value="material">
-                                              Material
-                                            </option>
-                                            <option value="style">Style</option>
-                                          </select>
-                                        </div>
-                                        <!--end::Select2-->
-                                        <!--begin::Input-->
-                                        <input
-                                          type="text"
-                                          class="form-control mw-100 w-200px"
-                                          name="product_option_value"
-                                          placeholder="Variation"
-                                        />
-                                        <!--end::Input-->
-                                        <button
-                                          type="button"
-                                          data-repeater-delete=""
-                                          class="btn btn-sm btn-icon btn-light-danger"
-                                        >
-                                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
-                                          <span class="svg-icon svg-icon-2">
-                                            <svg
-                                              xmlns="http://www.w3.org/2000/svg"
-                                              width="24"
-                                              height="24"
-                                              viewBox="0 0 24 24"
-                                              fill="none"
-                                            >
-                                              <rect
-                                                opacity="0.5"
-                                                x="7.05025"
-                                                y="15.5356"
-                                                width="12"
-                                                height="2"
-                                                rx="1"
-                                                transform="rotate(-45 7.05025 15.5356)"
-                                                fill="black"
-                                              />
-                                              <rect
-                                                x="8.46447"
-                                                y="7.05029"
-                                                width="12"
-                                                height="2"
-                                                rx="1"
-                                                transform="rotate(45 8.46447 7.05029)"
-                                                fill="black"
-                                              />
-                                            </svg>
-                                          </span>
-                                          <!--end::Svg Icon-->
-                                        </button>
-                                      </div>
-                                    </div>
-                                  </div>
-                                  <!--end::Form group-->
-                                  <!--begin::Form group-->
-                                  <div class="form-group mt-5">
-                                    <button
-                                      type="button"
-                                      data-repeater-create=""
-                                      class="btn btn-sm btn-light-primary"
-                                    >
-                                      <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                      <span class="svg-icon svg-icon-2">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
-                                        >
-                                          <rect
-                                            opacity="0.5"
-                                            x="11"
-                                            y="18"
-                                            width="12"
-                                            height="2"
-                                            rx="1"
-                                            transform="rotate(-90 11 18)"
-                                            fill="black"
-                                          />
-                                          <rect
-                                            x="6"
-                                            y="11"
-                                            width="12"
-                                            height="2"
-                                            rx="1"
-                                            fill="black"
-                                          />
-                                        </svg>
-                                      </span>
-                                      <!--end::Svg Icon-->Add another variation
-                                    </button>
-                                  </div>
-                                  <!--end::Form group-->
-                                </div>
-                                <!--end::Repeater-->
-                              </div>
-                              <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::Variations-->
+                          <!--end::Description-->
                         </div>
+                        <!--end::Input group-->
+                        <!--begin::Input group-->
+                        <div class="mb-10 fv-row">
+                          <!--begin::Label-->
+                          <label class="required form-label">Percent</label>
+                          <!--end::Label-->
+                          <!--begin::Input-->
+                          <input
+                            type="text"
+                            name="category_name"
+                            class="form-control mb-2"
+                            placeholder="Product name"
+                            value=""
+                          />
+                          <!--end::Input-->
+                          <!--begin::Description-->
+                          <div class="text-muted fs-7">help text goes here</div>
+                          <!--end::Description-->
+                        </div>
+                        <!--end::Input group-->
+
+                        <!--begin::Input group-->
+                        <div class="mb-10 fv-row">
+                          <!--begin::Label-->
+                          <label class="required form-label"
+                            >Percent category</label
+                          >
+                          <!--end::Label-->
+                          <!--begin::Input-->
+                          <input
+                            type="text"
+                            name="category_name"
+                            class="form-control mb-2"
+                            placeholder="Product name"
+                            value=""
+                          />
+                          <!--end::Input-->
+                          <!--begin::Description-->
+                          <div class="text-muted fs-7">help text goes here</div>
+                          <!--end::Description-->
+                        </div>
+                        <!--end::Input group-->
+
+                        <!--begin::Input group-->
+                        <div>
+                          <!--begin::Label-->
+                          <label class="form-label">Description</label>
+                          <!--end::Label-->
+                          <!--begin::Editor-->
+                          <div
+                            id="kt_ecommerce_add_category_description"
+                            name="kt_ecommerce_add_category_description"
+                            class="min-h-200px mb-2"
+                          ></div>
+                          <!--end::Editor-->
+                          <!--begin::Description-->
+                          <div class="text-muted fs-7">
+                            Set a description to the category for better
+                            visibility.
+                          </div>
+                          <!--end::Description-->
+                        </div>
+                        <!--end::Input group-->
                       </div>
-                      <!--end::Tab pane-->
+                      <!--end::Card header-->
                     </div>
-                    <!--end::Tab content-->
+                    <!--end::General options-->
+
                     <div class="d-flex justify-content-end">
                       <!--begin::Button-->
                       <a
@@ -8096,7 +7275,7 @@ License: For each use you must have a valid license purchased only from above li
                       <!--begin::Button-->
                       <button
                         type="submit"
-                        id="kt_ecommerce_add_product_submit"
+                        id="kt_ecommerce_add_category_submit"
                         class="btn btn-primary"
                       >
                         <span class="indicator-label">Save Changes</span>
@@ -8112,7 +7291,6 @@ License: For each use you must have a valid license purchased only from above li
                   </div>
                   <!--end::Main column-->
                 </form>
-                <!--end::Form-->
               </div>
               <!--end::Container-->
             </div>
@@ -9756,6 +8934,1219 @@ License: For each use you must have a valid license purchased only from above li
     <!--end::Chat drawer-->
     <!--end::Drawers-->
     <!--end::Main-->
+    <!--begin::Engage drawers-->
+    <!--begin::Demos drawer-->
+    <div
+      id="kt_engage_demos"
+      class="bg-body"
+      data-kt-drawer="true"
+      data-kt-drawer-name="explore"
+      data-kt-drawer-activate="true"
+      data-kt-drawer-overlay="true"
+      data-kt-drawer-width="{default:'350px', 'lg': '475px'}"
+      data-kt-drawer-direction="end"
+      data-kt-drawer-toggle="#kt_engage_demos_toggle"
+      data-kt-drawer-close="#kt_engage_demos_close"
+    >
+      <!--begin::Card-->
+      <div class="card shadow-none rounded-0 w-100">
+        <!--begin::Header-->
+        <div class="card-header" id="kt_engage_demos_header">
+          <h3 class="card-title fw-bolder text-gray-700">Explore</h3>
+          <div class="card-toolbar">
+            <button
+              type="button"
+              class="btn btn-sm btn-icon btn-active-color-primary h-40px w-40px me-n6"
+              id="kt_engage_demos_close"
+            >
+              <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+              <span class="svg-icon svg-icon-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <rect
+                    opacity="0.5"
+                    x="6"
+                    y="17.3137"
+                    width="16"
+                    height="2"
+                    rx="1"
+                    transform="rotate(-45 6 17.3137)"
+                    fill="black"
+                  />
+                  <rect
+                    x="7.41422"
+                    y="6"
+                    width="16"
+                    height="2"
+                    rx="1"
+                    transform="rotate(45 7.41422 6)"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <!--end::Svg Icon-->
+            </button>
+          </div>
+        </div>
+        <!--end::Header-->
+        <!--begin::Body-->
+        <div class="card-body" id="kt_engage_demos_body">
+          <!--begin::Content-->
+          <div
+            id="kt_explore_scroll"
+            class="scroll-y me-n5 pe-5"
+            data-kt-scroll="true"
+            data-kt-scroll-height="auto"
+            data-kt-scroll-wrappers="#kt_engage_demos_body"
+            data-kt-scroll-dependencies="#kt_engage_demos_header"
+            data-kt-scroll-offset="5px"
+          >
+            <!--begin::Wrapper-->
+            <div class="mb-0">
+              <!--begin::Heading-->
+              <div class="mb-7">
+                <div class="d-flex flex-stack">
+                  <h3 class="mb-0">Metronic Licenses</h3>
+                  <a
+                    href="https://themeforest.net/licenses/standard"
+                    class="fw-bold"
+                    target="_blank"
+                    >License FAQs</a
+                  >
+                </div>
+              </div>
+              <!--end::Heading-->
+              <!--begin::License-->
+              <div
+                class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5"
+              >
+                <div class="d-flex flex-stack">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">
+                        Regular License
+                      </div>
+                      <i
+                        class="text-gray-400 fas fa-exclamation-circle ms-1 fs-7"
+                        data-bs-toggle="popover"
+                        data-bs-custom-class="popover-dark"
+                        data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Use, by you or one client in a single end product which end users are not charged for"
+                      ></i>
+                    </div>
+                    <div class="fs-7 text-muted">
+                      For single end product used by you or one client
+                    </div>
+                  </div>
+                  <div class="text-nowrap">
+                    <span class="text-muted fs-7 fw-bold me-n1">$</span>
+                    <span class="text-dark fs-1 fw-bolder">39</span>
+                  </div>
+                </div>
+              </div>
+              <!--end::License-->
+              <!--begin::License-->
+              <div
+                class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5"
+              >
+                <div class="d-flex flex-stack">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">
+                        Extended License
+                      </div>
+                      <i
+                        class="text-gray-400 fas fa-exclamation-circle ms-1 fs-7"
+                        data-bs-toggle="popover"
+                        data-bs-custom-class="popover-dark"
+                        data-bs-trigger="hover"
+                        data-bs-placement="top"
+                        data-bs-content="Use, by you or one client, in a single end product which end users can be charged for."
+                      ></i>
+                    </div>
+                    <div class="fs-7 text-muted">
+                      For single SaaS app with paying users
+                    </div>
+                  </div>
+                  <div class="text-nowrap">
+                    <span class="text-muted fs-7 fw-bold me-n1">$</span>
+                    <span class="text-dark fs-1 fw-bolder">939</span>
+                  </div>
+                </div>
+              </div>
+              <!--end::License-->
+              <!--begin::License-->
+              <div
+                class="rounded border border-dashed border-gray-300 py-4 px-6 mb-5"
+              >
+                <div class="d-flex flex-stack">
+                  <div class="d-flex flex-column">
+                    <div class="d-flex align-items-center mb-1">
+                      <div class="fs-6 fw-bold text-gray-800 fw-bold mb-0 me-1">
+                        Custom License
+                      </div>
+                    </div>
+                    <div class="fs-7 text-muted">
+                      Reach us for custom license offers.
+                    </div>
+                  </div>
+                  <div class="text-nowrap">
+                    <a
+                      href="https://keenthemes.com/contact/"
+                      class="btn btn-sm btn-success"
+                      target="_blank"
+                      >Contact Us</a
+                    >
+                  </div>
+                </div>
+              </div>
+              <!--end::License-->
+              <!--begin::Purchase-->
+              <a
+                href="https://1.envato.market/EA4JP"
+                class="btn btn-primary mb-15 w-100"
+                >Buy Now</a
+              >
+              <!--end::Purchase-->
+              <!--begin::Demos-->
+              <div class="mb-0">
+                <h3 class="fw-bolder text-center mb-6">Metronic Demos</h3>
+                <!--begin::Row-->
+                <div class="row g-5">
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-success rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo1.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo1"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 1</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo2.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo2"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 2</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo3.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo3"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 3</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo4.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo4"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 4</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo5.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo5"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 5</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo6.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo6"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 6</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo7.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo7"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 7</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo8.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo8"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 8</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo9.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo9"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 9</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo10.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo10"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 10</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo11.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo11"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 11</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo12.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo12"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 12</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo13.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo13"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 13</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo14.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo14"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 14</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo15.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo15"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 15</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo16.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo16"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 16</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo17.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo17"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 17</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo18.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo18"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 18</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo19.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo19"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 19</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo20.png"
+                          alt="demo"
+                          class="w-100"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <a
+                          href="https://preview.keenthemes.com/metronic8/demo20"
+                          class="btn btn-sm btn-success shadow"
+                          >Demo 20</a
+                        >
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo21.png"
+                          alt="demo"
+                          class="w-100 opacity-25"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <div
+                          class="badge badge-white px-6 py-4 fw-bold fs-base shadow"
+                        >
+                          Coming soon
+                        </div>
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo22.png"
+                          alt="demo"
+                          class="w-100 opacity-25"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <div
+                          class="badge badge-white px-6 py-4 fw-bold fs-base shadow"
+                        >
+                          Coming soon
+                        </div>
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo23.png"
+                          alt="demo"
+                          class="w-100 opacity-25"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <div
+                          class="badge badge-white px-6 py-4 fw-bold fs-base shadow"
+                        >
+                          Coming soon
+                        </div>
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                  <!--begin::Col-->
+                  <div class="col-6">
+                    <!--begin::Demo-->
+                    <div
+                      class="overlay overflow-hidden position-relative border border-4 border-gray-200 rounded"
+                    >
+                      <div class="overlay-wrapper">
+                        <img
+                          src="assets/media/demos/demo24.png"
+                          alt="demo"
+                          class="w-100 opacity-25"
+                        />
+                      </div>
+                      <div class="overlay-layer bg-dark bg-opacity-10">
+                        <div
+                          class="badge badge-white px-6 py-4 fw-bold fs-base shadow"
+                        >
+                          Coming soon
+                        </div>
+                      </div>
+                    </div>
+                    <!--end::Demo-->
+                  </div>
+                  <!--end::Col-->
+                </div>
+                <!--end::Row-->
+              </div>
+              <!--end::Demos-->
+            </div>
+            <!--end::Wrapper-->
+          </div>
+          <!--end::Content-->
+        </div>
+        <!--end::Body-->
+      </div>
+      <!--end::Card-->
+    </div>
+    <!--end::Demos drawer-->
+    <!--begin::Help drawer-->
+    <div
+      id="kt_help"
+      class="bg-body"
+      data-kt-drawer="true"
+      data-kt-drawer-name="help"
+      data-kt-drawer-activate="true"
+      data-kt-drawer-overlay="true"
+      data-kt-drawer-width="{default:'350px', 'md': '525px'}"
+      data-kt-drawer-direction="end"
+      data-kt-drawer-toggle="#kt_help_toggle"
+      data-kt-drawer-close="#kt_help_close"
+    >
+      <!--begin::Card-->
+      <div class="card shadow-none rounded-0 w-100">
+        <!--begin::Header-->
+        <div class="card-header" id="kt_help_header">
+          <h5 class="card-title fw-bold text-gray-600">
+            Learn &amp; Get Inspired
+          </h5>
+          <div class="card-toolbar">
+            <button
+              type="button"
+              class="btn btn-sm btn-icon explore-btn-dismiss me-n5"
+              id="kt_help_close"
+            >
+              <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+              <span class="svg-icon svg-icon-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                >
+                  <rect
+                    opacity="0.5"
+                    x="6"
+                    y="17.3137"
+                    width="16"
+                    height="2"
+                    rx="1"
+                    transform="rotate(-45 6 17.3137)"
+                    fill="black"
+                  />
+                  <rect
+                    x="7.41422"
+                    y="6"
+                    width="16"
+                    height="2"
+                    rx="1"
+                    transform="rotate(45 7.41422 6)"
+                    fill="black"
+                  />
+                </svg>
+              </span>
+              <!--end::Svg Icon-->
+            </button>
+          </div>
+        </div>
+        <!--end::Header-->
+        <!--begin::Body-->
+        <div class="card-body" id="kt_help_body">
+          <!--begin::Content-->
+          <div
+            id="kt_help_scroll"
+            class="hover-scroll-overlay-y"
+            data-kt-scroll="true"
+            data-kt-scroll-height="auto"
+            data-kt-scroll-wrappers="#kt_help_body"
+            data-kt-scroll-dependencies="#kt_help_header"
+            data-kt-scroll-offset="5px"
+          >
+            <!--begin::Support-->
+            <div
+              class="rounded border border-dashed border-gray-300 p-6 p-lg-8 mb-10"
+            >
+              <!--begin::Heading-->
+              <h2 class="fw-bolder mb-5">
+                Support at
+                <a href="https://devs.keenthemes.com" class=""
+                  >devs.keenthemes.com</a
+                >
+              </h2>
+              <!--end::Heading-->
+              <!--begin::Description-->
+              <div class="fs-5 fw-bold mb-5">
+                <span class="text-gray-500"
+                  >Join our developers community to find answer to your question
+                  and help others.</span
+                >
+                <a
+                  class="explore-link d-none"
+                  href="https://keenthemes.com/licensing"
+                  >FAQs</a
+                >
+              </div>
+              <!--end::Description-->
+              <!--begin::Link-->
+              <a
+                href="https://devs.keenthemes.com"
+                class="btn btn-lg explore-btn-primary w-100"
+                >Get Support</a
+              >
+              <!--end::Link-->
+            </div>
+            <!--end::Support-->
+            <!--begin::Link-->
+            <div class="d-flex align-items-center mb-7">
+              <!--begin::Icon-->
+              <div
+                class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-warning"
+              >
+                <!--begin::Svg Icon | path: icons/duotune/abstract/abs027.svg-->
+                <span
+                  class="svg-icon svg-icon-warning svg-icon-2x svg-icon-lg-3x"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.3"
+                      d="M21.25 18.525L13.05 21.825C12.35 22.125 11.65 22.125 10.95 21.825L2.75 18.525C1.75 18.125 1.75 16.725 2.75 16.325L4.04999 15.825L10.25 18.325C10.85 18.525 11.45 18.625 12.05 18.625C12.65 18.625 13.25 18.525 13.85 18.325L20.05 15.825L21.35 16.325C22.35 16.725 22.35 18.125 21.25 18.525ZM13.05 16.425L21.25 13.125C22.25 12.725 22.25 11.325 21.25 10.925L13.05 7.62502C12.35 7.32502 11.65 7.32502 10.95 7.62502L2.75 10.925C1.75 11.325 1.75 12.725 2.75 13.125L10.95 16.425C11.65 16.725 12.45 16.725 13.05 16.425Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M11.05 11.025L2.84998 7.725C1.84998 7.325 1.84998 5.925 2.84998 5.525L11.05 2.225C11.75 1.925 12.45 1.925 13.15 2.225L21.35 5.525C22.35 5.925 22.35 7.325 21.35 7.725L13.05 11.025C12.45 11.325 11.65 11.325 11.05 11.025Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Icon-->
+              <!--begin::Info-->
+              <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column me-2 me-lg-5">
+                  <!--begin::Title-->
+                  <a
+                    href="../../demo1/dist/documentation/getting-started.html"
+                    class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                    >Documentation &amp; Videos</a
+                  >
+                  <!--end::Title-->
+                  <!--begin::Description-->
+                  <div class="text-muted fw-bold fs-7 fs-lg-6">
+                    From guides and video tutorials, to live demos and code
+                    examples to get started.
+                  </div>
+                  <!--end::Description-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+                <span class="svg-icon svg-icon-gray-400 svg-icon-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <rect
+                      opacity="0.5"
+                      x="18"
+                      y="13"
+                      width="13"
+                      height="2"
+                      rx="1"
+                      transform="rotate(-180 18 13)"
+                      fill="black"
+                    />
+                    <path
+                      d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Info-->
+            </div>
+            <!--end::Link-->
+            <!--begin::Link-->
+            <div class="d-flex align-items-center mb-7">
+              <!--begin::Icon-->
+              <div
+                class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-primary"
+              >
+                <!--begin::Svg Icon | path: icons/duotune/ecommerce/ecm007.svg-->
+                <span
+                  class="svg-icon svg-icon-primary svg-icon-2x svg-icon-lg-3x"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M21 9V11C21 11.6 20.6 12 20 12H14V8H20C20.6 8 21 8.4 21 9ZM10 8H4C3.4 8 3 8.4 3 9V11C3 11.6 3.4 12 4 12H10V8Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M15 2C13.3 2 12 3.3 12 5V8H15C16.7 8 18 6.7 18 5C18 3.3 16.7 2 15 2Z"
+                      fill="black"
+                    />
+                    <path
+                      opacity="0.3"
+                      d="M9 2C10.7 2 12 3.3 12 5V8H9C7.3 8 6 6.7 6 5C6 3.3 7.3 2 9 2ZM4 12V21C4 21.6 4.4 22 5 22H10V12H4ZM20 12V21C20 21.6 19.6 22 19 22H14V12H20Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Icon-->
+              <!--begin::Info-->
+              <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column me-2 me-lg-5">
+                  <!--begin::Title-->
+                  <a
+                    href="../../demo1/dist/documentation/base/utilities.html"
+                    class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                    >Plugins &amp; Components</a
+                  >
+                  <!--end::Title-->
+                  <!--begin::Description-->
+                  <div class="text-muted fw-bold fs-7 fs-lg-6">
+                    Check out our 300+ in-house components and customized
+                    3rd-party plugins.
+                  </div>
+                  <!--end::Description-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+                <span class="svg-icon svg-icon-gray-400 svg-icon-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <rect
+                      opacity="0.5"
+                      x="18"
+                      y="13"
+                      width="13"
+                      height="2"
+                      rx="1"
+                      transform="rotate(-180 18 13)"
+                      fill="black"
+                    />
+                    <path
+                      d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Info-->
+            </div>
+            <!--end::Link-->
+            <!--begin::Link-->
+            <div class="d-flex align-items-center mb-7">
+              <!--begin::Icon-->
+              <div
+                class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-info"
+              >
+                <!--begin::Svg Icon | path: icons/duotune/art/art006.svg-->
+                <span class="svg-icon svg-icon-info svg-icon-2x svg-icon-lg-3x">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      opacity="0.3"
+                      d="M22 19V17C22 16.4 21.6 16 21 16H8V3C8 2.4 7.6 2 7 2H5C4.4 2 4 2.4 4 3V19C4 19.6 4.4 20 5 20H21C21.6 20 22 19.6 22 19Z"
+                      fill="black"
+                    />
+                    <path
+                      d="M20 5V21C20 21.6 19.6 22 19 22H17C16.4 22 16 21.6 16 21V8H8V4H19C19.6 4 20 4.4 20 5ZM3 8H4V4H3C2.4 4 2 4.4 2 5V7C2 7.6 2.4 8 3 8Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Icon-->
+              <!--begin::Info-->
+              <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column me-2 me-lg-5">
+                  <!--begin::Title-->
+                  <a
+                    href="https://preview.keenthemes.com/metronic8/demo1/layout-builder.html"
+                    class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                    >Layout Builder</a
+                  >
+                  <!--end::Title-->
+                  <!--begin::Description-->
+                  <div class="text-muted fw-bold fs-7 fs-lg-6">
+                    Build your layout, preview it and export the HTML for server
+                    side integration.
+                  </div>
+                  <!--end::Description-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+                <span class="svg-icon svg-icon-gray-400 svg-icon-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <rect
+                      opacity="0.5"
+                      x="18"
+                      y="13"
+                      width="13"
+                      height="2"
+                      rx="1"
+                      transform="rotate(-180 18 13)"
+                      fill="black"
+                    />
+                    <path
+                      d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Info-->
+            </div>
+            <!--end::Link-->
+            <!--begin::Link-->
+            <div class="d-flex align-items-center mb-7">
+              <!--begin::Icon-->
+              <div
+                class="d-flex flex-center w-50px h-50px w-lg-75px h-lg-75px flex-shrink-0 rounded bg-light-danger"
+              >
+                <!--begin::Svg Icon | path: icons/duotune/electronics/elc009.svg-->
+                <span
+                  class="svg-icon svg-icon-danger svg-icon-2x svg-icon-lg-3x"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <path
+                      d="M13 9V8C13 7.4 13.4 7 14 7H15C16.7 7 18 5.7 18 4V3C18 2.4 17.6 2 17 2C16.4 2 16 2.4 16 3V4C16 4.6 15.6 5 15 5H14C12.3 5 11 6.3 11 8V9H13Z"
+                      fill="black"
+                    />
+                    <path
+                      opacity="0.3"
+                      d="M21 22H3C2.4 22 2 21.6 2 21V10C2 9.4 2.4 9 3 9H21C21.6 9 22 9.4 22 10V21C22 21.6 21.6 22 21 22ZM5 12C4.4 12 4 12.4 4 13C4 13.6 4.4 14 5 14C5.6 14 6 13.6 6 13C6 12.4 5.6 12 5 12ZM8 12C7.4 12 7 12.4 7 13C7 13.6 7.4 14 8 14C8.6 14 9 13.6 9 13C9 12.4 8.6 12 8 12ZM11 12C10.4 12 10 12.4 10 13C10 13.6 10.4 14 11 14C11.6 14 12 13.6 12 13C12 12.4 11.6 12 11 12ZM14 12C13.4 12 13 12.4 13 13C13 13.6 13.4 14 14 14C14.6 14 15 13.6 15 13C15 12.4 14.6 12 14 12ZM9 15C8.4 15 8 15.4 8 16C8 16.6 8.4 17 9 17C9.6 17 10 16.6 10 16C10 15.4 9.6 15 9 15ZM12 15C11.4 15 11 15.4 11 16C11 16.6 11.4 17 12 17C12.6 17 13 16.6 13 16C13 15.4 12.6 15 12 15ZM15 15C14.4 15 14 15.4 14 16C14 16.6 14.4 17 15 17C15.6 17 16 16.6 16 16C16 15.4 15.6 15 15 15ZM19 18C18.4 18 18 18.4 18 19C18 19.6 18.4 20 19 20C19.6 20 20 19.6 20 19C20 18.4 19.6 18 19 18ZM7 19C7 18.4 6.6 18 6 18H5C4.4 18 4 18.4 4 19C4 19.6 4.4 20 5 20H6C6.6 20 7 19.6 7 19ZM7 16C7 15.4 6.6 15 6 15H5C4.4 15 4 15.4 4 16C4 16.6 4.4 17 5 17H6C6.6 17 7 16.6 7 16ZM17 14H19C19.6 14 20 13.6 20 13C20 12.4 19.6 12 19 12H17C16.4 12 16 12.4 16 13C16 13.6 16.4 14 17 14ZM18 17H19C19.6 17 20 16.6 20 16C20 15.4 19.6 15 19 15H18C17.4 15 17 15.4 17 16C17 16.6 17.4 17 18 17ZM17 19C17 18.4 16.6 18 16 18H9C8.4 18 8 18.4 8 19C8 19.6 8.4 20 9 20H16C16.6 20 17 19.6 17 19Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Icon-->
+              <!--begin::Info-->
+              <div class="d-flex flex-stack flex-grow-1 ms-4 ms-lg-6">
+                <!--begin::Wrapper-->
+                <div class="d-flex flex-column me-2 me-lg-5">
+                  <!--begin::Title-->
+                  <a
+                    href="../../demo1/dist/documentation/getting-started/changelog.html"
+                    class="text-dark text-hover-primary fw-bolder fs-6 fs-lg-4 mb-1"
+                    >What's New</a
+                  >
+                  <!--end::Title-->
+                  <!--begin::Description-->
+                  <div class="text-muted fw-bold fs-7 fs-lg-6">
+                    Latest features and improvements added with our users
+                    feedback in mind.
+                  </div>
+                  <!--end::Description-->
+                </div>
+                <!--end::Wrapper-->
+                <!--begin::Svg Icon | path: icons/duotune/arrows/arr064.svg-->
+                <span class="svg-icon svg-icon-gray-400 svg-icon-2">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                  >
+                    <rect
+                      opacity="0.5"
+                      x="18"
+                      y="13"
+                      width="13"
+                      height="2"
+                      rx="1"
+                      transform="rotate(-180 18 13)"
+                      fill="black"
+                    />
+                    <path
+                      d="M15.4343 12.5657L11.25 16.75C10.8358 17.1642 10.8358 17.8358 11.25 18.25C11.6642 18.6642 12.3358 18.6642 12.75 18.25L18.2929 12.7071C18.6834 12.3166 18.6834 11.6834 18.2929 11.2929L12.75 5.75C12.3358 5.33579 11.6642 5.33579 11.25 5.75C10.8358 6.16421 10.8358 6.83579 11.25 7.25L15.4343 11.4343C15.7467 11.7467 15.7467 12.2533 15.4343 12.5657Z"
+                      fill="black"
+                    />
+                  </svg>
+                </span>
+                <!--end::Svg Icon-->
+              </div>
+              <!--end::Info-->
+            </div>
+            <!--end::Link-->
+          </div>
+          <!--end::Content-->
+        </div>
+        <!--end::Body-->
+      </div>
+      <!--end::Card-->
+    </div>
+    <!--end::Help drawer-->
+    <!--end::Engage drawers-->
 
     <!--begin::Scrolltop-->
     <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
@@ -14182,7 +14573,7 @@ License: For each use you must have a valid license purchased only from above li
                   <div class="d-flex align-items-center">
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                      <img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+                      <img alt="Pic" src="assets/media/avatars/300-21.jpg" />
                     </div>
                     <!--end::Avatar-->
                     <!--begin::Details-->
@@ -14190,9 +14581,9 @@ License: For each use you must have a valid license purchased only from above li
                       <a
                         href="#"
                         class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2"
-                        >Ana Crown</a
+                        >Ethan Wilder</a
                       >
-                      <div class="fw-bold text-muted">ana.cf@limtel.com</div>
+                      <div class="fw-bold text-muted">ethan@loop.com.au</div>
                     </div>
                     <!--end::Details-->
                   </div>
@@ -14263,7 +14654,7 @@ License: For each use you must have a valid license purchased only from above li
     <script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
     <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
-    <script src="assets/js/custom/apps/ecommerce/catalog/save-product.js"></script>
+    <script src="assets/js/custom/apps/ecommerce/catalog/save-category.js"></script>
     <script src="assets/js/widgets.bundle.js"></script>
     <script src="assets/js/custom/widgets.js"></script>
     <script src="assets/js/custom/apps/chat/chat.js"></script>
