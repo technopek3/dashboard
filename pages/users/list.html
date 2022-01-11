@@ -145,7 +145,7 @@ License: For each use you must have a valid license purchased only from above li
               data-kt-scroll-wrappers="#kt_aside_menu"
               data-kt-scroll-offset="0"
             >
-                <!--begin::Menu-->
+               <!--begin::Menu-->
               <div
                 class="menu menu-column menu-title-gray-800 menu-state-title-primary menu-state-icon-primary menu-state-bullet-primary menu-arrow-gray-500"
                 id="#kt_aside_menu"
@@ -243,6 +243,7 @@ License: For each use you must have a valid license purchased only from above li
             <!--end::Aside Menu-->
           </div>
           <!--end::Aside menu-->
+         
         </div>
         <!--end::Aside-->
         <!--begin::Wrapper-->
@@ -2178,7 +2179,7 @@ License: For each use you must have a valid license purchased only from above li
                           <div
                             data-kt-menu-trigger="{default:'click', lg: 'hover'}"
                             data-kt-menu-placement="right-start"
-                            class="menu-item here show menu-lg-down-accordion"
+                            class="menu-item menu-lg-down-accordion"
                           >
                             <span class="menu-link py-3">
                               <span class="menu-icon">
@@ -2223,7 +2224,7 @@ License: For each use you must have a valid license purchased only from above li
                               <div
                                 data-kt-menu-trigger="{default:'click', lg: 'hover'}"
                                 data-kt-menu-placement="right-start"
-                                class="menu-item here show menu-lg-down-accordion"
+                                class="menu-item menu-lg-down-accordion"
                               >
                                 <span class="menu-link py-3">
                                   <span class="menu-bullet">
@@ -2259,7 +2260,7 @@ License: For each use you must have a valid license purchased only from above li
                                   </div>
                                   <div class="menu-item">
                                     <a
-                                      class="menu-link active py-3"
+                                      class="menu-link py-3"
                                       href="../../demo1/dist/apps/ecommerce/catalog/add-product.html"
                                     >
                                       <span class="menu-bullet">
@@ -2593,7 +2594,7 @@ License: For each use you must have a valid license purchased only from above li
                           <div
                             data-kt-menu-trigger="{default:'click', lg: 'hover'}"
                             data-kt-menu-placement="right-start"
-                            class="menu-item menu-lg-down-accordion"
+                            class="menu-item here show menu-lg-down-accordion"
                           >
                             <span class="menu-link py-3">
                               <span class="menu-icon">
@@ -2628,7 +2629,7 @@ License: For each use you must have a valid license purchased only from above li
                               <div
                                 data-kt-menu-trigger="{default:'click', lg: 'hover'}"
                                 data-kt-menu-placement="right-start"
-                                class="menu-item menu-lg-down-accordion"
+                                class="menu-item here show menu-lg-down-accordion"
                               >
                                 <span class="menu-link py-3">
                                   <span class="menu-bullet">
@@ -2642,7 +2643,7 @@ License: For each use you must have a valid license purchased only from above li
                                 >
                                   <div class="menu-item">
                                     <a
-                                      class="menu-link py-3"
+                                      class="menu-link active py-3"
                                       href="../../demo1/dist/apps/user-management/users/list.html"
                                     >
                                       <span class="menu-bullet">
@@ -2654,7 +2655,7 @@ License: For each use you must have a valid license purchased only from above li
                                   <div class="menu-item">
                                     <a
                                       class="menu-link py-3"
-                                      href="../../demo1/dist/apps/user-management/users/view.html"
+                                      href="./pages/users/view.html"
                                     >
                                       <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
@@ -2693,7 +2694,7 @@ License: For each use you must have a valid license purchased only from above li
                                   <div class="menu-item">
                                     <a
                                       class="menu-link py-3"
-                                      href="../../demo1/dist/apps/user-management/roles/view.html"
+                                      href="./pages/users/view.html"
                                     >
                                       <span class="menu-bullet">
                                         <span class="bullet bullet-dot"></span>
@@ -7018,7 +7019,7 @@ License: For each use you must have a valid license purchased only from above li
                   <h1
                     class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"
                   >
-                    New product
+                    Users List
                   </h1>
                   <!--end::Title-->
                   <!--begin::Separator-->
@@ -7042,19 +7043,9 @@ License: For each use you must have a valid license purchased only from above li
                       <span class="bullet bg-gray-300 w-5px h-2px"></span>
                     </li>
                     <!--end::Item-->
+
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-muted">products</li>
-                    <!--end::Item-->
-                    <!--begin::Item-->
-                    <li class="breadcrumb-item">
-                      <span class="bullet bg-gray-300 w-5px h-2px"></span>
-                    </li>
-                    <!--end::Item-->
-                    
-                    
-                    <!--end::Item-->
-                    <!--begin::Item-->
-                    <li class="breadcrumb-item text-dark">Add Product</li>
+                    <li class="breadcrumb-item text-dark">Users List</li>
                     <!--end::Item-->
                   </ul>
                   <!--end::Breadcrumb-->
@@ -7069,262 +7060,219 @@ License: For each use you must have a valid license purchased only from above li
             <div class="post d-flex flex-column-fluid" id="kt_post">
               <!--begin::Container-->
               <div id="kt_content_container" class="container-xxl">
-                <!--begin::Form-->
-                <form
-                  id="kt_ecommerce_add_product_form"
-                  class="form d-flex flex-column flex-lg-row"
-                  data-kt-redirect="../../demo1/dist/apps/ecommerce/catalog/products.html"
-                >
-                  <!--begin::Aside column-->
-                  <div
-                    class="d-flex flex-column gap-7 gap-lg-10 w-100 w-lg-300px mb-7 me-lg-10"
-                  >
-                    <!--begin::Thumbnail settings-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Thumbnail</h2>
-                        </div>
-                        <!--end::Card title-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body text-center pt-0">
-                        <!--begin::Image input-->
-                        <div
-                          class="image-input image-input-empty image-input-outline mb-3"
-                          data-kt-image-input="true"
-                          style="
-                            background-image: url(assets/media/svg/files/blank-image.svg);
-                          "
+                <!--begin::Card-->
+                <div class="card">
+                  <!--begin::Card header-->
+                  <div class="card-header border-0 pt-6">
+                    <!--begin::Card title-->
+                    <div class="card-title">
+                      <!--begin::Search-->
+                      <div
+                        class="d-flex align-items-center position-relative my-1"
+                      >
+                        <!--begin::Svg Icon | path: icons/duotune/general/gen021.svg-->
+                        <span
+                          class="svg-icon svg-icon-1 position-absolute ms-6"
                         >
-                          <!--begin::Preview existing avatar-->
-                          <div
-                            class="image-input-wrapper w-150px h-150px"
-                          ></div>
-                          <!--end::Preview existing avatar-->
-                          <!--begin::Label-->
-                          <label
-                            class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                            data-kt-image-input-action="change"
-                            data-bs-toggle="tooltip"
-                            title="Change avatar"
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill="none"
                           >
-                            <i class="bi bi-pencil-fill fs-7"></i>
-                            <!--begin::Inputs-->
-                            <input
-                              type="file"
-                              name="avatar"
-                              accept=".png, .jpg, .jpeg"
+                            <rect
+                              opacity="0.5"
+                              x="17.0365"
+                              y="15.1223"
+                              width="8.15546"
+                              height="2"
+                              rx="1"
+                              transform="rotate(45 17.0365 15.1223)"
+                              fill="black"
                             />
-                            <input type="hidden" name="avatar_remove" />
-                            <!--end::Inputs-->
-                          </label>
-                          <!--end::Label-->
-                          <!--begin::Cancel-->
-                          <span
-                            class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                            data-kt-image-input-action="cancel"
-                            data-bs-toggle="tooltip"
-                            title="Cancel avatar"
-                          >
-                            <i class="bi bi-x fs-2"></i>
+                            <path
+                              d="M11 19C6.55556 19 3 15.4444 3 11C3 6.55556 6.55556 3 11 3C15.4444 3 19 6.55556 19 11C19 15.4444 15.4444 19 11 19ZM11 5C7.53333 5 5 7.53333 5 11C5 14.4667 7.53333 17 11 17C14.4667 17 17 14.4667 17 11C17 7.53333 14.4667 5 11 5Z"
+                              fill="black"
+                            />
+                          </svg>
+                        </span>
+                        <!--end::Svg Icon-->
+                        <input
+                          type="text"
+                          data-kt-user-table-filter="search"
+                          class="form-control form-control-solid w-250px ps-14"
+                          placeholder="Search user"
+                        />
+                      </div>
+                      <!--end::Search-->
+                    </div>
+                    <!--begin::Card title-->
+                    <!--begin::Card toolbar-->
+                    <div class="card-toolbar">
+                      <!--begin::Toolbar-->
+                      <div
+                        class="d-flex justify-content-end"
+                        data-kt-user-table-toolbar="base"
+                      >
+                        <!--begin::Filter-->
+                        <button
+                          type="button"
+                          class="btn btn-light-primary me-3"
+                          data-kt-menu-trigger="click"
+                          data-kt-menu-placement="bottom-end"
+                        >
+                          <!--begin::Svg Icon | path: icons/duotune/general/gen031.svg-->
+                          <span class="svg-icon svg-icon-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <path
+                                d="M19.0759 3H4.72777C3.95892 3 3.47768 3.83148 3.86067 4.49814L8.56967 12.6949C9.17923 13.7559 9.5 14.9582 9.5 16.1819V19.5072C9.5 20.2189 10.2223 20.7028 10.8805 20.432L13.8805 19.1977C14.2553 19.0435 14.5 18.6783 14.5 18.273V13.8372C14.5 12.8089 14.8171 11.8056 15.408 10.964L19.8943 4.57465C20.3596 3.912 19.8856 3 19.0759 3Z"
+                                fill="black"
+                              />
+                            </svg>
                           </span>
-                          <!--end::Cancel-->
-                          <!--begin::Remove-->
-                          <span
-                            class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
-                            data-kt-image-input-action="remove"
-                            data-bs-toggle="tooltip"
-                            title="Remove avatar"
+                          <!--end::Svg Icon-->Filter
+                        </button>
+                        <!--begin::Menu 1-->
+                        <div
+                          class="menu menu-sub menu-sub-dropdown w-300px w-md-325px"
+                          data-kt-menu="true"
+                        >
+                          <!--begin::Header-->
+                          <div class="px-7 py-5">
+                            <div class="fs-5 text-dark fw-bolder">
+                              Filter Options
+                            </div>
+                          </div>
+                          <!--end::Header-->
+                          <!--begin::Separator-->
+                          <div class="separator border-gray-200"></div>
+                          <!--end::Separator-->
+                          <!--begin::Content-->
+                          <div
+                            class="px-7 py-5"
+                            data-kt-user-table-filter="form"
                           >
-                            <i class="bi bi-x fs-2"></i>
+                            <!--begin::Input group-->
+                            <div class="mb-10">
+                              <label class="form-label fs-6 fw-bold"
+                                >Role:</label
+                              >
+                              <select
+                                class="form-select form-select-solid fw-bolder"
+                                data-kt-select2="true"
+                                data-placeholder="Select option"
+                                data-allow-clear="true"
+                                data-kt-user-table-filter="role"
+                                data-hide-search="true"
+                              >
+                                <option></option>
+                                <option value="Administrator">
+                                  Administrator
+                                </option>
+                                <option value="Analyst">Analyst</option>
+                                <option value="Developer">Developer</option>
+                                <option value="Support">Support</option>
+                                <option value="Trial">Trial</option>
+                              </select>
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Input group-->
+                            <div class="mb-10">
+                              <label class="form-label fs-6 fw-bold"
+                                >Two Step Verification:</label
+                              >
+                              <select
+                                class="form-select form-select-solid fw-bolder"
+                                data-kt-select2="true"
+                                data-placeholder="Select option"
+                                data-allow-clear="true"
+                                data-kt-user-table-filter="two-step"
+                                data-hide-search="true"
+                              >
+                                <option></option>
+                                <option value="Enabled">Enabled</option>
+                              </select>
+                            </div>
+                            <!--end::Input group-->
+                            <!--begin::Actions-->
+                            <div class="d-flex justify-content-end">
+                              <button
+                                type="reset"
+                                class="btn btn-light btn-active-light-primary fw-bold me-2 px-6"
+                                data-kt-menu-dismiss="true"
+                                data-kt-user-table-filter="reset"
+                              >
+                                Reset
+                              </button>
+                              <button
+                                type="submit"
+                                class="btn btn-primary fw-bold px-6"
+                                data-kt-menu-dismiss="true"
+                                data-kt-user-table-filter="filter"
+                              >
+                                Apply
+                              </button>
+                            </div>
+                            <!--end::Actions-->
+                          </div>
+                          <!--end::Content-->
+                        </div>
+                        <!--end::Menu 1-->
+                        <!--end::Filter-->
+                        <!--begin::Export-->
+                        <button
+                          type="button"
+                          class="btn btn-light-primary me-3"
+                          data-bs-toggle="modal"
+                          data-bs-target="#kt_modal_export_users"
+                        >
+                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr078.svg-->
+                          <span class="svg-icon svg-icon-2">
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              width="24"
+                              height="24"
+                              viewBox="0 0 24 24"
+                              fill="none"
+                            >
+                              <rect
+                                opacity="0.3"
+                                x="12.75"
+                                y="4.25"
+                                width="12"
+                                height="2"
+                                rx="1"
+                                transform="rotate(90 12.75 4.25)"
+                                fill="black"
+                              />
+                              <path
+                                d="M12.0573 6.11875L13.5203 7.87435C13.9121 8.34457 14.6232 8.37683 15.056 7.94401C15.4457 7.5543 15.4641 6.92836 15.0979 6.51643L12.4974 3.59084C12.0996 3.14332 11.4004 3.14332 11.0026 3.59084L8.40206 6.51643C8.0359 6.92836 8.0543 7.5543 8.44401 7.94401C8.87683 8.37683 9.58785 8.34458 9.9797 7.87435L11.4427 6.11875C11.6026 5.92684 11.8974 5.92684 12.0573 6.11875Z"
+                                fill="black"
+                              />
+                              <path
+                                d="M18.75 8.25H17.75C17.1977 8.25 16.75 8.69772 16.75 9.25C16.75 9.80228 17.1977 10.25 17.75 10.25C18.3023 10.25 18.75 10.6977 18.75 11.25V18.25C18.75 18.8023 18.3023 19.25 17.75 19.25H5.75C5.19772 19.25 4.75 18.8023 4.75 18.25V11.25C4.75 10.6977 5.19771 10.25 5.75 10.25C6.30229 10.25 6.75 9.80228 6.75 9.25C6.75 8.69772 6.30229 8.25 5.75 8.25H4.75C3.64543 8.25 2.75 9.14543 2.75 10.25V19.25C2.75 20.3546 3.64543 21.25 4.75 21.25H18.75C19.8546 21.25 20.75 20.3546 20.75 19.25V10.25C20.75 9.14543 19.8546 8.25 18.75 8.25Z"
+                                fill="#C4C4C4"
+                              />
+                            </svg>
                           </span>
-                          <!--end::Remove-->
-                        </div>
-                        <!--end::Image input-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Set the product thumbnail image. Only *.png, *.jpg and
-                          *.jpeg image files are accepted
-                        </div>
-                        <!--end::Description-->
-                      </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Thumbnail settings-->
-                    <!--begin::Status-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Status</h2>
-                        </div>
-                        <!--end::Card title-->
-                        <!--begin::Card toolbar-->
-                        <div class="card-toolbar">
-                          <div
-                            class="rounded-circle bg-success w-15px h-15px"
-                            id="kt_ecommerce_add_product_status"
-                          ></div>
-                        </div>
-                        <!--begin::Card toolbar-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body pt-0">
-                        <!--begin::Select2-->
-                        <select
-                          class="form-select mb-2"
-                          data-control="select2"
-                          data-hide-search="true"
-                          data-placeholder="Select an option"
-                          id="kt_ecommerce_add_product_status_select"
+                          <!--end::Svg Icon-->Export
+                        </button>
+                        <!--end::Export-->
+                        <!--begin::Add user-->
+                        <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#kt_modal_add_user"
                         >
-                          <option></option>
-                          <option value="published" selected="selected">
-                            Published
-                          </option>
-                          <option value="draft">Draft</option>
-                          <option value="scheduled">Scheduled</option>
-                          <option value="inactive">Inactive</option>
-                        </select>
-                        <!--end::Select2-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Set the product status.
-                        </div>
-                        <!--end::Description-->
-                        <!--begin::Datepicker-->
-                        <div class="d-none mt-10">
-                          <label
-                            for="kt_ecommerce_add_product_status_datepicker"
-                            class="form-label"
-                            >Select publishing date and time</label
-                          >
-                          <input
-                            class="form-control"
-                            id="kt_ecommerce_add_product_status_datepicker"
-                            placeholder="Pick date &amp; time"
-                          />
-                        </div>
-                        <!--end::Datepicker-->
-                      </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Status-->
-
-                    <!--begin::Confirmation-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Confirmation</h2>
-                        </div>
-                        <!--end::Card title-->
-                        <!--begin::Card toolbar-->
-                        <div class="card-toolbar">
-                          <div
-                            class="rounded-circle bg-primary w-15px h-15px"
-                            id="kt_ecommerce_add_product_status"
-                          ></div>
-                        </div>
-                        <!--begin::Card toolbar-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body pt-0">
-                        <!--begin::Select2-->
-                        <select
-                          class="form-select mb-2"
-                          data-control="select2"
-                          data-hide-search="true"
-                          data-placeholder="Select an option"
-                          id="kt_ecommerce_add_product_status_select"
-                        >
-                          <option></option>
-                          <option value="confirmed" selected>confirmed</option>
-                          <option value="not confirmed">not confirmed</option>
-                        </select>
-                        <!--end::Select2-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Set the product confirmation.
-                        </div>
-                        <!--end::Description-->
-                        <!--begin::Datepicker-->
-                        <div class="d-none mt-10">
-                          <label
-                            for="kt_ecommerce_add_product_status_datepicker"
-                            class="form-label"
-                            >Select publishing date and time</label
-                          >
-                          <input
-                            class="form-control"
-                            id="kt_ecommerce_add_product_status_datepicker"
-                            placeholder="Pick date &amp; time"
-                          />
-                        </div>
-                        <!--end::Datepicker-->
-                      </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Confirmation-->
-
-                    <!--begin::Category & tags-->
-                    <div class="card card-flush py-4">
-                      <!--begin::Card header-->
-                      <div class="card-header">
-                        <!--begin::Card title-->
-                        <div class="card-title">
-                          <h2>Product Details</h2>
-                        </div>
-                        <!--end::Card title-->
-                      </div>
-                      <!--end::Card header-->
-                      <!--begin::Card body-->
-                      <div class="card-body pt-0">
-                        <!--begin::Input group-->
-                        <!--begin::Label-->
-                        <label class="form-label">Categories</label>
-                        <!--end::Label-->
-                        <!--begin::Select2-->
-                        <select
-                          class="form-select mb-2"
-                          data-control="select2"
-                          data-placeholder="Select an option"
-                          data-allow-clear="true"
-                          multiple="multiple"
-                        >
-                          <option></option>
-                          <option value="Computers">Computers</option>
-                          <option value="Watches">Watches</option>
-                          <option value="Headphones">Headphones</option>
-                          <option value="Footwear">Footwear</option>
-                          <option value="Cameras">Cameras</option>
-                          <option value="Shirts">Shirts</option>
-                          <option value="Household">Household</option>
-                          <option value="Handbags">Handbags</option>
-                          <option value="Wines">Wines</option>
-                          <option value="Sandals">Sandals</option>
-                        </select>
-                        <!--end::Select2-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7 mb-7">
-                          Add product to a category.
-                        </div>
-                        <!--end::Description-->
-                        <!--end::Input group-->
-                        <!--begin::Button-->
-                        <a
-                          href="../../demo1/dist/apps/ecommerce/catalog/add-category.html"
-                          class="btn btn-light-primary btn-sm mb-10"
-                        >
-                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
+                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr075.svg-->
                           <span class="svg-icon svg-icon-2">
                             <svg
                               xmlns="http://www.w3.org/2000/svg"
@@ -7335,784 +7283,905 @@ License: For each use you must have a valid license purchased only from above li
                             >
                               <rect
                                 opacity="0.5"
-                                x="11"
-                                y="18"
-                                width="12"
+                                x="11.364"
+                                y="20.364"
+                                width="16"
                                 height="2"
                                 rx="1"
-                                transform="rotate(-90 11 18)"
+                                transform="rotate(-90 11.364 20.364)"
                                 fill="black"
                               />
                               <rect
-                                x="6"
-                                y="11"
-                                width="12"
+                                x="4.36396"
+                                y="11.364"
+                                width="16"
                                 height="2"
                                 rx="1"
                                 fill="black"
                               />
                             </svg>
                           </span>
-                          <!--end::Svg Icon-->Create new category</a
-                        >
-                        <!--end::Button-->
-                        <!--begin::Input group-->
-                        <!--begin::Label-->
-                        <label class="form-label d-block">Tags</label>
-                        <!--end::Label-->
-                        <!--begin::Input-->
-                        <input
-                          id="kt_ecommerce_add_product_tags"
-                          name="kt_ecommerce_add_product_tags"
-                          class="form-control mb-2"
-                          value=""
-                        />
-                        <!--end::Input-->
-                        <!--begin::Description-->
-                        <div class="text-muted fs-7">
-                          Add tags to a product.
-                        </div>
-                        <!--end::Description-->
-                        <!--end::Input group-->
+                          <!--end::Svg Icon-->Add User
+                        </button>
+                        <!--end::Add user-->
                       </div>
-                      <!--end::Card body-->
-                    </div>
-                    <!--end::Category & tags-->
-                  </div>
-                  <!--end::Aside column-->
-                  <!--begin::Main column-->
-                  <div
-                    class="d-flex flex-column flex-row-fluid gap-7 gap-lg-10"
-                  >
-                    <!--begin:::Tabs-->
-                    <ul
-                      class="nav nav-custom nav-tabs nav-line-tabs nav-line-tabs-2x border-0 fs-4 fw-bold mb-n2"
-                    >
-                      <!--begin:::Tab item-->
-                      <li class="nav-item">
-                        <a
-                          class="nav-link text-active-primary pb-4 active"
-                          data-bs-toggle="tab"
-                          href="#kt_ecommerce_add_product_general"
-                          >General</a
-                        >
-                      </li>
-                      <!--end:::Tab item-->
-                      <!--begin:::Tab item-->
-                      <li class="nav-item">
-                        <a
-                          class="nav-link text-active-primary pb-4"
-                          data-bs-toggle="tab"
-                          href="#kt_ecommerce_add_product_advanced"
-                          >Advanced</a
-                        >
-                      </li>
-                      <!--end:::Tab item-->
-                    </ul>
-                    <!--end:::Tabs-->
-                    <!--begin::Tab content-->
-                    <div class="tab-content">
-                      <!--begin::Tab pane-->
+                      <!--end::Toolbar-->
+                      <!--begin::Group actions-->
                       <div
-                        class="tab-pane fade show active"
-                        id="kt_ecommerce_add_product_general"
-                        role="tab-panel"
+                        class="d-flex justify-content-end align-items-center d-none"
+                        data-kt-user-table-toolbar="selected"
                       >
-                        <div class="d-flex flex-column gap-7 gap-lg-10">
-                          <!--begin::General options-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>General</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Product Name</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="product_name"
-                                  class="form-control mb-2"
-                                  placeholder="Product name"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  A product name is required and recommended to
-                                  be unique.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div>
-                                <!--begin::Label-->
-                                <label class="form-label">Description</label>
-                                <!--end::Label-->
-                                <!--begin::Editor-->
-                                <div
-                                  id="kt_ecommerce_add_product_description"
-                                  name="kt_ecommerce_add_product_description"
-                                  class="min-h-200px mb-2"
-                                ></div>
-                                <!--end::Editor-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set a description to the product for better
-                                  visibility.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::General options-->
-                          <!--begin::Media-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Media</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="fv-row mb-2">
-                                <!--begin::Dropzone-->
-                                <div
-                                  class="dropzone"
-                                  id="kt_ecommerce_add_product_media"
-                                >
-                                  <!--begin::Message-->
-                                  <div class="dz-message needsclick">
-                                    <!--begin::Icon-->
-                                    <i
-                                      class="bi bi-file-earmark-arrow-up text-primary fs-3x"
-                                    ></i>
-                                    <!--end::Icon-->
-                                    <!--begin::Info-->
-                                    <div class="ms-4">
-                                      <h3
-                                        class="fs-5 fw-bolder text-gray-900 mb-1"
-                                      >
-                                        Drop files here or click to upload.
-                                      </h3>
-                                      <span class="fs-7 fw-bold text-gray-400"
-                                        >Upload up to 10 files</span
-                                      >
-                                    </div>
-                                    <!--end::Info-->
-                                  </div>
-                                </div>
-                                <!--end::Dropzone-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Description-->
-                              <div class="text-muted fs-7">
-                                Set the product media gallery.
-                              </div>
-                              <!--end::Description-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::Media-->
-                          <!--begin::Pricing-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Pricing</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Base Price</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="price"
-                                  class="form-control mb-2"
-                                  placeholder="Product price"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set the product price.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="fv-row mb-10">
-                                <!--begin::Label-->
-                                <label class="fs-6 fw-bold mb-2"
-                                  >Discount Type
-                                  <i
-                                    class="fas fa-exclamation-circle ms-2 fs-7"
-                                    data-bs-toggle="tooltip"
-                                    title="Select a discount type that will be applied to this product"
-                                  ></i
-                                ></label>
-                                <!--End::Label-->
-                                <!--begin::Row-->
-                                <div
-                                  class="row row-cols-1 row-cols-md-3 row-cols-lg-1 row-cols-xl-3 g-9"
-                                  data-kt-buttons="true"
-                                  data-kt-buttons-target="[data-kt-button='true']"
-                                >
-                                  <!--begin::Col-->
-                                  <div class="col">
-                                    <!--begin::Option-->
-                                    <label
-                                      class="btn btn-outline btn-outline-dashed btn-outline-default active d-flex text-start p-6"
-                                      data-kt-button="true"
-                                    >
-                                      <!--begin::Radio-->
-                                      <span
-                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1"
-                                      >
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="discount_option"
-                                          value="1"
-                                          checked="checked"
-                                        />
-                                      </span>
-                                      <!--end::Radio-->
-                                      <!--begin::Info-->
-                                      <span class="ms-5">
-                                        <span
-                                          class="fs-4 fw-bolder text-gray-800 d-block"
-                                          >No Discount</span
-                                        >
-                                      </span>
-                                      <!--end::Info-->
-                                    </label>
-                                    <!--end::Option-->
-                                  </div>
-                                  <!--end::Col-->
-                                  <!--begin::Col-->
-                                  <div class="col">
-                                    <!--begin::Option-->
-                                    <label
-                                      class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                      data-kt-button="true"
-                                    >
-                                      <!--begin::Radio-->
-                                      <span
-                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1"
-                                      >
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="discount_option"
-                                          value="2"
-                                        />
-                                      </span>
-                                      <!--end::Radio-->
-                                      <!--begin::Info-->
-                                      <span class="ms-5">
-                                        <span
-                                          class="fs-4 fw-bolder text-gray-800 d-block"
-                                          >Percentage %</span
-                                        >
-                                      </span>
-                                      <!--end::Info-->
-                                    </label>
-                                    <!--end::Option-->
-                                  </div>
-                                  <!--end::Col-->
-                                  <!--begin::Col-->
-                                  <div class="col">
-                                    <!--begin::Option-->
-                                    <label
-                                      class="btn btn-outline btn-outline-dashed btn-outline-default d-flex text-start p-6"
-                                      data-kt-button="true"
-                                    >
-                                      <!--begin::Radio-->
-                                      <span
-                                        class="form-check form-check-custom form-check-solid form-check-sm align-items-start mt-1"
-                                      >
-                                        <input
-                                          class="form-check-input"
-                                          type="radio"
-                                          name="discount_option"
-                                          value="3"
-                                        />
-                                      </span>
-                                      <!--end::Radio-->
-                                      <!--begin::Info-->
-                                      <span class="ms-5">
-                                        <span
-                                          class="fs-4 fw-bolder text-gray-800 d-block"
-                                          >Fixed Price</span
-                                        >
-                                      </span>
-                                      <!--end::Info-->
-                                    </label>
-                                    <!--end::Option-->
-                                  </div>
-                                  <!--end::Col-->
-                                </div>
-                                <!--end::Row-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
+                        <div class="fw-bolder me-5">
+                          <span
+                            class="me-2"
+                            data-kt-user-table-select="selected_count"
+                          ></span
+                          >Selected
+                        </div>
+                        <button
+                          type="button"
+                          class="btn btn-danger"
+                          data-kt-user-table-select="delete_selected"
+                        >
+                          Delete Selected
+                        </button>
+                      </div>
+                      <!--end::Group actions-->
+                      <!--begin::Modal - Adjust Balance-->
+                      <div
+                        class="modal fade"
+                        id="kt_modal_export_users"
+                        tabindex="-1"
+                        aria-hidden="true"
+                      >
+                        <!--begin::Modal dialog-->
+                        <div
+                          class="modal-dialog modal-dialog-centered mw-650px"
+                        >
+                          <!--begin::Modal content-->
+                          <div class="modal-content">
+                            <!--begin::Modal header-->
+                            <div class="modal-header">
+                              <!--begin::Modal title-->
+                              <h2 class="fw-bolder">Export Users</h2>
+                              <!--end::Modal title-->
+                              <!--begin::Close-->
                               <div
-                                class="d-none mb-10 fv-row"
-                                id="kt_ecommerce_add_product_discount_percentage"
+                                class="btn btn-icon btn-sm btn-active-icon-primary"
+                                data-kt-users-modal-action="close"
                               >
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Set Discount Percentage</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Slider-->
-                                <div
-                                  class="d-flex flex-column text-center mb-5"
-                                >
-                                  <div
-                                    class="d-flex align-items-start justify-content-center mb-7"
+                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                                <span class="svg-icon svg-icon-1">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
                                   >
-                                    <span
-                                      class="fw-bolder fs-3x"
-                                      id="kt_ecommerce_add_product_discount_label"
-                                      >0</span
-                                    >
-                                    <span class="fw-bolder fs-4 mt-1 ms-2"
-                                      >%</span
-                                    >
-                                  </div>
-                                  <div
-                                    id="kt_ecommerce_add_product_discount_slider"
-                                    class="noUi-sm"
-                                  ></div>
-                                </div>
-                                <!--end::Slider-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set a percentage discount to be applied on
-                                  this product.
-                                </div>
-                                <!--end::Description-->
+                                    <rect
+                                      opacity="0.5"
+                                      x="6"
+                                      y="17.3137"
+                                      width="16"
+                                      height="2"
+                                      rx="1"
+                                      transform="rotate(-45 6 17.3137)"
+                                      fill="black"
+                                    />
+                                    <rect
+                                      x="7.41422"
+                                      y="6"
+                                      width="16"
+                                      height="2"
+                                      rx="1"
+                                      transform="rotate(45 7.41422 6)"
+                                      fill="black"
+                                    />
+                                  </svg>
+                                </span>
+                                <!--end::Svg Icon-->
                               </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div
-                                class="d-none mb-10 fv-row"
-                                id="kt_ecommerce_add_product_discount_fixed"
+                              <!--end::Close-->
+                            </div>
+                            <!--end::Modal header-->
+                            <!--begin::Modal body-->
+                            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                              <!--begin::Form-->
+                              <form
+                                id="kt_modal_export_users_form"
+                                class="form"
+                                action="#"
                               >
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Fixed Discounted Price</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="dicsounted_price"
-                                  class="form-control mb-2"
-                                  placeholder="Discounted price"
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Set the discounted product price. The product
-                                  will be reduced at the determined fixed price
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Tax-->
-                              <div class="d-flex flex-wrap gap-5">
                                 <!--begin::Input group-->
-                                <div class="fv-row w-100 flex-md-root">
+                                <div class="fv-row mb-10">
                                   <!--begin::Label-->
-                                  <label class="required form-label"
-                                    >Tax Class</label
-                                  >
-                                  <!--end::Label-->
-                                  <!--begin::Select2-->
-                                  <select
-                                    class="form-select mb-2"
-                                    name="tax"
-                                    data-control="select2"
-                                    data-hide-search="true"
-                                    data-placeholder="Select an option"
-                                  >
-                                    <option></option>
-                                    <option value="0">Tax Free</option>
-                                    <option value="1">Taxable Goods</option>
-                                    <option value="2">
-                                      Downloadable Product
-                                    </option>
-                                  </select>
-                                  <!--end::Select2-->
-                                  <!--begin::Description-->
-                                  <div class="text-muted fs-7">
-                                    Set the product tax class.
-                                  </div>
-                                  <!--end::Description-->
-                                </div>
-                                <!--end::Input group-->
-                                <!--begin::Input group-->
-                                <div class="fv-row w-100 flex-md-root">
-                                  <!--begin::Label-->
-                                  <label class="form-label"
-                                    >VAT Amount (%)</label
+                                  <label class="fs-6 fw-bold form-label mb-2"
+                                    >Select Roles:</label
                                   >
                                   <!--end::Label-->
                                   <!--begin::Input-->
-                                  <input
-                                    type="text"
-                                    class="form-control mb-2"
-                                    value=""
-                                  />
+                                  <select
+                                    name="role"
+                                    data-control="select2"
+                                    data-placeholder="Select a role"
+                                    data-hide-search="true"
+                                    class="form-select form-select-solid fw-bolder"
+                                  >
+                                    <option></option>
+                                    <option value="Administrator">
+                                      Administrator
+                                    </option>
+                                    <option value="Analyst">Analyst</option>
+                                    <option value="Developer">Developer</option>
+                                    <option value="Support">Support</option>
+                                    <option value="Trial">Trial</option>
+                                  </select>
                                   <!--end::Input-->
-                                  <!--begin::Description-->
-                                  <div class="text-muted fs-7">
-                                    Set the product VAT about.
-                                  </div>
-                                  <!--end::Description-->
                                 </div>
                                 <!--end::Input group-->
-                              </div>
-                              <!--end:Tax-->
+                                <!--begin::Input group-->
+                                <div class="fv-row mb-10">
+                                  <!--begin::Label-->
+                                  <label
+                                    class="required fs-6 fw-bold form-label mb-2"
+                                    >Select Export Format:</label
+                                  >
+                                  <!--end::Label-->
+                                  <!--begin::Input-->
+                                  <select
+                                    name="format"
+                                    data-control="select2"
+                                    data-placeholder="Select a format"
+                                    data-hide-search="true"
+                                    class="form-select form-select-solid fw-bolder"
+                                  >
+                                    <option></option>
+                                    <option value="excel">Excel</option>
+                                    <option value="pdf">PDF</option>
+                                    <option value="cvs">CVS</option>
+                                    <option value="zip">ZIP</option>
+                                  </select>
+                                  <!--end::Input-->
+                                </div>
+                                <!--end::Input group-->
+                                <!--begin::Actions-->
+                                <div class="text-center">
+                                  <button
+                                    type="reset"
+                                    class="btn btn-light me-3"
+                                    data-kt-users-modal-action="cancel"
+                                  >
+                                    Discard
+                                  </button>
+                                  <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                    data-kt-users-modal-action="submit"
+                                  >
+                                    <span class="indicator-label">Submit</span>
+                                    <span class="indicator-progress"
+                                      >Please wait...
+                                      <span
+                                        class="spinner-border spinner-border-sm align-middle ms-2"
+                                      ></span
+                                    ></span>
+                                  </button>
+                                </div>
+                                <!--end::Actions-->
+                              </form>
+                              <!--end::Form-->
                             </div>
-                            <!--end::Card header-->
+                            <!--end::Modal body-->
                           </div>
-                          <!--end::Pricing-->
+                          <!--end::Modal content-->
                         </div>
+                        <!--end::Modal dialog-->
                       </div>
-                      <!--end::Tab pane-->
-                      <!--begin::Tab pane-->
+                      <!--end::Modal - New Card-->
+                      <!--begin::Modal - Add task-->
                       <div
-                        class="tab-pane fade"
-                        id="kt_ecommerce_add_product_advanced"
-                        role="tab-panel"
+                        class="modal fade"
+                        id="kt_modal_add_user"
+                        tabindex="-1"
+                        aria-hidden="true"
                       >
-                        <div class="d-flex flex-column gap-7 gap-lg-10">
-                          <!--begin::Inventory-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Inventory</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label">SKU</label>
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="sku"
-                                  class="form-control mb-2"
-                                  placeholder="SKU Number"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Enter the product SKU.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Barcode</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <input
-                                  type="text"
-                                  name="sku"
-                                  class="form-control mb-2"
-                                  placeholder="Barcode Number"
-                                  value=""
-                                />
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Enter the product barcode number.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="mb-10 fv-row">
-                                <!--begin::Label-->
-                                <label class="required form-label"
-                                  >Quantity</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <div class="d-flex gap-3">
-                                  <input
-                                    type="number"
-                                    name="shelf"
-                                    class="form-control mb-2"
-                                    placeholder="On shelf"
-                                    value=""
-                                  />
-                                  <input
-                                    type="number"
-                                    name="warehouse"
-                                    class="form-control mb-2"
-                                    placeholder="In warehouse"
-                                  />
-                                </div>
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Enter the product quantity.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                              <!--begin::Input group-->
-                              <div class="fv-row">
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Allow Backorders</label
-                                >
-                                <!--end::Label-->
-                                <!--begin::Input-->
-                                <div
-                                  class="form-check form-check-custom form-check-solid mb-2"
-                                >
-                                  <input
-                                    class="form-check-input"
-                                    type="checkbox"
-                                    value=""
-                                  />
-                                  <label class="form-check-label">Yes</label>
-                                </div>
-                                <!--end::Input-->
-                                <!--begin::Description-->
-                                <div class="text-muted fs-7">
-                                  Allow customers to purchase products that are
-                                  out of stock.
-                                </div>
-                                <!--end::Description-->
-                              </div>
-                              <!--end::Input group-->
-                            </div>
-                            <!--end::Card header-->
-                          </div>
-                          <!--end::Inventory-->
-                          <!--begin::Variations-->
-                          <div class="card card-flush py-4">
-                            <!--begin::Card header-->
-                            <div class="card-header">
-                              <div class="card-title">
-                                <h2>Variations</h2>
-                              </div>
-                            </div>
-                            <!--end::Card header-->
-                            <!--begin::Card body-->
-                            <div class="card-body pt-0">
-                              <!--begin::Input group-->
+                        <!--begin::Modal dialog-->
+                        <div
+                          class="modal-dialog modal-dialog-centered mw-650px"
+                        >
+                          <!--begin::Modal content-->
+                          <div class="modal-content">
+                            <!--begin::Modal header-->
+                            <div
+                              class="modal-header"
+                              id="kt_modal_add_user_header"
+                            >
+                              <!--begin::Modal title-->
+                              <h2 class="fw-bolder">Add User</h2>
+                              <!--end::Modal title-->
+                              <!--begin::Close-->
                               <div
-                                class=""
-                                data-kt-ecommerce-catalog-add-product="auto-options"
+                                class="btn btn-icon btn-sm btn-active-icon-primary"
+                                data-kt-users-modal-action="close"
                               >
-                                <!--begin::Label-->
-                                <label class="form-label"
-                                  >Add Product Variations</label
+                                <!--begin::Svg Icon | path: icons/duotune/arrows/arr061.svg-->
+                                <span class="svg-icon svg-icon-1">
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    width="24"
+                                    height="24"
+                                    viewBox="0 0 24 24"
+                                    fill="none"
+                                  >
+                                    <rect
+                                      opacity="0.5"
+                                      x="6"
+                                      y="17.3137"
+                                      width="16"
+                                      height="2"
+                                      rx="1"
+                                      transform="rotate(-45 6 17.3137)"
+                                      fill="black"
+                                    />
+                                    <rect
+                                      x="7.41422"
+                                      y="6"
+                                      width="16"
+                                      height="2"
+                                      rx="1"
+                                      transform="rotate(45 7.41422 6)"
+                                      fill="black"
+                                    />
+                                  </svg>
+                                </span>
+                                <!--end::Svg Icon-->
+                              </div>
+                              <!--end::Close-->
+                            </div>
+                            <!--end::Modal header-->
+                            <!--begin::Modal body-->
+                            <div class="modal-body scroll-y mx-5 mx-xl-15 my-7">
+                              <!--begin::Form-->
+                              <form
+                                id="kt_modal_add_user_form"
+                                class="form"
+                                action="#"
+                              >
+                                <!--begin::Scroll-->
+                                <div
+                                  class="d-flex flex-column scroll-y me-n7 pe-7"
+                                  id="kt_modal_add_user_scroll"
+                                  data-kt-scroll="true"
+                                  data-kt-scroll-activate="{default: false, lg: true}"
+                                  data-kt-scroll-max-height="auto"
+                                  data-kt-scroll-dependencies="#kt_modal_add_user_header"
+                                  data-kt-scroll-wrappers="#kt_modal_add_user_scroll"
+                                  data-kt-scroll-offset="300px"
                                 >
-                                <!--end::Label-->
-                                <!--begin::Repeater-->
-                                <div id="kt_ecommerce_add_product_options">
-                                  <!--begin::Form group-->
-                                  <div class="form-group">
-                                    <div
-                                      data-repeater-list="kt_ecommerce_add_product_options"
-                                      class="d-flex flex-column gap-3"
+                                  <!--begin::Input group-->
+                                  <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="d-block fw-bold fs-6 mb-5"
+                                      >Avatar</label
                                     >
+                                    <!--end::Label-->
+                                    <!--begin::Image input-->
+                                    <div
+                                      class="image-input image-input-outline"
+                                      data-kt-image-input="true"
+                                      style="
+                                        background-image: url('assets/media/svg/avatars/blank.svg');
+                                      "
+                                    >
+                                      <!--begin::Preview existing avatar-->
                                       <div
-                                        data-repeater-item=""
-                                        class="form-group d-flex flex-wrap gap-5"
+                                        class="image-input-wrapper w-125px h-125px"
+                                        style="
+                                          background-image: url(assets/media/avatars/300-6.jpg);
+                                        "
+                                      ></div>
+                                      <!--end::Preview existing avatar-->
+                                      <!--begin::Label-->
+                                      <label
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                        data-kt-image-input-action="change"
+                                        data-bs-toggle="tooltip"
+                                        title="Change avatar"
                                       >
-                                        <!--begin::Select2-->
-                                        <div class="w-100 w-md-200px">
-                                          <select
-                                            class="form-select"
-                                            name="product_option"
-                                            data-placeholder="Select a variation"
-                                            data-kt-ecommerce-catalog-add-product="product_option"
-                                          >
-                                            <option></option>
-                                            <option value="color">Color</option>
-                                            <option value="size">Size</option>
-                                            <option value="material">
-                                              Material
-                                            </option>
-                                            <option value="style">Style</option>
-                                          </select>
-                                        </div>
-                                        <!--end::Select2-->
+                                        <i class="bi bi-pencil-fill fs-7"></i>
+                                        <!--begin::Inputs-->
+                                        <input
+                                          type="file"
+                                          name="avatar"
+                                          accept=".png, .jpg, .jpeg"
+                                        />
+                                        <input
+                                          type="hidden"
+                                          name="avatar_remove"
+                                        />
+                                        <!--end::Inputs-->
+                                      </label>
+                                      <!--end::Label-->
+                                      <!--begin::Cancel-->
+                                      <span
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                        data-kt-image-input-action="cancel"
+                                        data-bs-toggle="tooltip"
+                                        title="Cancel avatar"
+                                      >
+                                        <i class="bi bi-x fs-2"></i>
+                                      </span>
+                                      <!--end::Cancel-->
+                                      <!--begin::Remove-->
+                                      <span
+                                        class="btn btn-icon btn-circle btn-active-color-primary w-25px h-25px bg-body shadow"
+                                        data-kt-image-input-action="remove"
+                                        data-bs-toggle="tooltip"
+                                        title="Remove avatar"
+                                      >
+                                        <i class="bi bi-x fs-2"></i>
+                                      </span>
+                                      <!--end::Remove-->
+                                    </div>
+                                    <!--end::Image input-->
+                                    <!--begin::Hint-->
+                                    <div class="form-text">
+                                      Allowed file types: png, jpg, jpeg.
+                                    </div>
+                                    <!--end::Hint-->
+                                  </div>
+                                  <!--end::Input group-->
+                                  <!--begin::Input group-->
+                                  <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="required fw-bold fs-6 mb-2"
+                                      >Full Name</label
+                                    >
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <input
+                                      type="text"
+                                      name="user_name"
+                                      class="form-control form-control-solid mb-3 mb-lg-0"
+                                      placeholder="Full name"
+                                      value="Emma Smith"
+                                    />
+                                    <!--end::Input-->
+                                  </div>
+                                  <!--end::Input group-->
+                                  <!--begin::Input group-->
+                                  <div class="fv-row mb-7">
+                                    <!--begin::Label-->
+                                    <label class="required fw-bold fs-6 mb-2"
+                                      >Email</label
+                                    >
+                                    <!--end::Label-->
+                                    <!--begin::Input-->
+                                    <input
+                                      type="email"
+                                      name="user_email"
+                                      class="form-control form-control-solid mb-3 mb-lg-0"
+                                      placeholder="example@domain.com"
+                                      value="e.smith@kpmg.com.au"
+                                    />
+                                    <!--end::Input-->
+                                  </div>
+                                  <!--end::Input group-->
+                                  <!--begin::Input group-->
+                                  <div class="mb-7">
+                                    <!--begin::Label-->
+                                    <label class="required fw-bold fs-6 mb-5"
+                                      >Role</label
+                                    >
+                                    <!--end::Label-->
+                                    <!--begin::Roles-->
+                                    <!--begin::Input row-->
+                                    <div class="d-flex fv-row">
+                                      <!--begin::Radio-->
+                                      <div
+                                        class="form-check form-check-custom form-check-solid"
+                                      >
                                         <!--begin::Input-->
                                         <input
-                                          type="text"
-                                          class="form-control mw-100 w-200px"
-                                          name="product_option_value"
-                                          placeholder="Variation"
+                                          class="form-check-input me-3"
+                                          name="user_role"
+                                          type="radio"
+                                          value="0"
+                                          id="kt_modal_update_role_option_0"
+                                          checked="checked"
                                         />
                                         <!--end::Input-->
-                                        <button
-                                          type="button"
-                                          data-repeater-delete=""
-                                          class="btn btn-sm btn-icon btn-light-danger"
+                                        <!--begin::Label-->
+                                        <label
+                                          class="form-check-label"
+                                          for="kt_modal_update_role_option_0"
                                         >
-                                          <!--begin::Svg Icon | path: icons/duotune/arrows/arr088.svg-->
-                                          <span class="svg-icon svg-icon-2">
-                                            <svg
-                                              xmlns="http://www.w3.org/2000/svg"
-                                              width="24"
-                                              height="24"
-                                              viewBox="0 0 24 24"
-                                              fill="none"
-                                            >
-                                              <rect
-                                                opacity="0.5"
-                                                x="7.05025"
-                                                y="15.5356"
-                                                width="12"
-                                                height="2"
-                                                rx="1"
-                                                transform="rotate(-45 7.05025 15.5356)"
-                                                fill="black"
-                                              />
-                                              <rect
-                                                x="8.46447"
-                                                y="7.05029"
-                                                width="12"
-                                                height="2"
-                                                rx="1"
-                                                transform="rotate(45 8.46447 7.05029)"
-                                                fill="black"
-                                              />
-                                            </svg>
-                                          </span>
-                                          <!--end::Svg Icon-->
-                                        </button>
+                                          <div class="fw-bolder text-gray-800">
+                                            Administrator
+                                          </div>
+                                          <div class="text-gray-600">
+                                            Best for business owners and company
+                                            administrators
+                                          </div>
+                                        </label>
+                                        <!--end::Label-->
                                       </div>
+                                      <!--end::Radio-->
                                     </div>
-                                  </div>
-                                  <!--end::Form group-->
-                                  <!--begin::Form group-->
-                                  <div class="form-group mt-5">
-                                    <button
-                                      type="button"
-                                      data-repeater-create=""
-                                      class="btn btn-sm btn-light-primary"
-                                    >
-                                      <!--begin::Svg Icon | path: icons/duotune/arrows/arr087.svg-->
-                                      <span class="svg-icon svg-icon-2">
-                                        <svg
-                                          xmlns="http://www.w3.org/2000/svg"
-                                          width="24"
-                                          height="24"
-                                          viewBox="0 0 24 24"
-                                          fill="none"
+                                    <!--end::Input row-->
+                                    <div
+                                      class="separator separator-dashed my-5"
+                                    ></div>
+                                    <!--begin::Input row-->
+                                    <div class="d-flex fv-row">
+                                      <!--begin::Radio-->
+                                      <div
+                                        class="form-check form-check-custom form-check-solid"
+                                      >
+                                        <!--begin::Input-->
+                                        <input
+                                          class="form-check-input me-3"
+                                          name="user_role"
+                                          type="radio"
+                                          value="1"
+                                          id="kt_modal_update_role_option_1"
+                                        />
+                                        <!--end::Input-->
+                                        <!--begin::Label-->
+                                        <label
+                                          class="form-check-label"
+                                          for="kt_modal_update_role_option_1"
                                         >
-                                          <rect
-                                            opacity="0.5"
-                                            x="11"
-                                            y="18"
-                                            width="12"
-                                            height="2"
-                                            rx="1"
-                                            transform="rotate(-90 11 18)"
-                                            fill="black"
-                                          />
-                                          <rect
-                                            x="6"
-                                            y="11"
-                                            width="12"
-                                            height="2"
-                                            rx="1"
-                                            fill="black"
-                                          />
-                                        </svg>
-                                      </span>
-                                      <!--end::Svg Icon-->Add another variation
-                                    </button>
+                                          <div class="fw-bolder text-gray-800">
+                                            Developer
+                                          </div>
+                                          <div class="text-gray-600">
+                                            Best for developers or people
+                                            primarily using the API
+                                          </div>
+                                        </label>
+                                        <!--end::Label-->
+                                      </div>
+                                      <!--end::Radio-->
+                                    </div>
+                                    <!--end::Input row-->
+                                    <div
+                                      class="separator separator-dashed my-5"
+                                    ></div>
+                                    <!--begin::Input row-->
+                                    <div class="d-flex fv-row">
+                                      <!--begin::Radio-->
+                                      <div
+                                        class="form-check form-check-custom form-check-solid"
+                                      >
+                                        <!--begin::Input-->
+                                        <input
+                                          class="form-check-input me-3"
+                                          name="user_role"
+                                          type="radio"
+                                          value="2"
+                                          id="kt_modal_update_role_option_2"
+                                        />
+                                        <!--end::Input-->
+                                        <!--begin::Label-->
+                                        <label
+                                          class="form-check-label"
+                                          for="kt_modal_update_role_option_2"
+                                        >
+                                          <div class="fw-bolder text-gray-800">
+                                            Analyst
+                                          </div>
+                                          <div class="text-gray-600">
+                                            Best for people who need full access
+                                            to analytics data, but don't need to
+                                            update business settings
+                                          </div>
+                                        </label>
+                                        <!--end::Label-->
+                                      </div>
+                                      <!--end::Radio-->
+                                    </div>
+                                    <!--end::Input row-->
+                                    <div
+                                      class="separator separator-dashed my-5"
+                                    ></div>
+                                    <!--begin::Input row-->
+                                    <div class="d-flex fv-row">
+                                      <!--begin::Radio-->
+                                      <div
+                                        class="form-check form-check-custom form-check-solid"
+                                      >
+                                        <!--begin::Input-->
+                                        <input
+                                          class="form-check-input me-3"
+                                          name="user_role"
+                                          type="radio"
+                                          value="3"
+                                          id="kt_modal_update_role_option_3"
+                                        />
+                                        <!--end::Input-->
+                                        <!--begin::Label-->
+                                        <label
+                                          class="form-check-label"
+                                          for="kt_modal_update_role_option_3"
+                                        >
+                                          <div class="fw-bolder text-gray-800">
+                                            Support
+                                          </div>
+                                          <div class="text-gray-600">
+                                            Best for employees who regularly
+                                            refund payments and respond to
+                                            disputes
+                                          </div>
+                                        </label>
+                                        <!--end::Label-->
+                                      </div>
+                                      <!--end::Radio-->
+                                    </div>
+                                    <!--end::Input row-->
+                                    <div
+                                      class="separator separator-dashed my-5"
+                                    ></div>
+                                    <!--begin::Input row-->
+                                    <div class="d-flex fv-row">
+                                      <!--begin::Radio-->
+                                      <div
+                                        class="form-check form-check-custom form-check-solid"
+                                      >
+                                        <!--begin::Input-->
+                                        <input
+                                          class="form-check-input me-3"
+                                          name="user_role"
+                                          type="radio"
+                                          value="4"
+                                          id="kt_modal_update_role_option_4"
+                                        />
+                                        <!--end::Input-->
+                                        <!--begin::Label-->
+                                        <label
+                                          class="form-check-label"
+                                          for="kt_modal_update_role_option_4"
+                                        >
+                                          <div class="fw-bolder text-gray-800">
+                                            Trial
+                                          </div>
+                                          <div class="text-gray-600">
+                                            Best for people who need to preview
+                                            content data, but don't need to make
+                                            any updates
+                                          </div>
+                                        </label>
+                                        <!--end::Label-->
+                                      </div>
+                                      <!--end::Radio-->
+                                    </div>
+                                    <!--end::Input row-->
+                                    <!--end::Roles-->
                                   </div>
-                                  <!--end::Form group-->
+                                  <!--end::Input group-->
                                 </div>
-                                <!--end::Repeater-->
-                              </div>
-                              <!--end::Input group-->
+                                <!--end::Scroll-->
+                                <!--begin::Actions-->
+                                <div class="text-center pt-15">
+                                  <button
+                                    type="reset"
+                                    class="btn btn-light me-3"
+                                    data-kt-users-modal-action="cancel"
+                                  >
+                                    Discard
+                                  </button>
+                                  <button
+                                    type="submit"
+                                    class="btn btn-primary"
+                                    data-kt-users-modal-action="submit"
+                                  >
+                                    <span class="indicator-label">Submit</span>
+                                    <span class="indicator-progress"
+                                      >Please wait...
+                                      <span
+                                        class="spinner-border spinner-border-sm align-middle ms-2"
+                                      ></span
+                                    ></span>
+                                  </button>
+                                </div>
+                                <!--end::Actions-->
+                              </form>
+                              <!--end::Form-->
                             </div>
-                            <!--end::Card header-->
+                            <!--end::Modal body-->
                           </div>
-                          <!--end::Variations-->
+                          <!--end::Modal content-->
                         </div>
+                        <!--end::Modal dialog-->
                       </div>
-                      <!--end::Tab pane-->
+                      <!--end::Modal - Add task-->
                     </div>
-                    <!--end::Tab content-->
-                    <div class="d-flex justify-content-end">
-                      <!--begin::Button-->
-                      <a
-                        href="../../demo1/dist/apps/ecommerce/catalog/products.html"
-                        id="kt_ecommerce_add_product_cancel"
-                        class="btn btn-light me-5"
-                        >Cancel</a
-                      >
-                      <!--end::Button-->
-                      <!--begin::Button-->
-                      <button
-                        type="submit"
-                        id="kt_ecommerce_add_product_submit"
-                        class="btn btn-primary"
-                      >
-                        <span class="indicator-label">Save Changes</span>
-                        <span class="indicator-progress"
-                          >Please wait...
-                          <span
-                            class="spinner-border spinner-border-sm align-middle ms-2"
-                          ></span
-                        ></span>
-                      </button>
-                      <!--end::Button-->
-                    </div>
+                    <!--end::Card toolbar-->
                   </div>
-                  <!--end::Main column-->
-                </form>
-                <!--end::Form-->
+                  <!--end::Card header-->
+                  <!--begin::Card body-->
+                  <div class="card-body py-4">
+                    <!--begin::Table-->
+                    <table
+                      class="table align-middle table-row-dashed fs-6 gy-5"
+                      id="kt_table_users"
+                    >
+                      <!--begin::Table head-->
+                      <thead>
+                        <!--begin::Table row-->
+                        <tr
+                          class="text-start text-muted fw-bolder fs-7 text-uppercase gs-0"
+                        >
+                          <th class="w-10px pe-2">
+                            <div
+                              class="form-check form-check-sm form-check-custom form-check-solid me-3"
+                            >
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                data-kt-check="true"
+                                data-kt-check-target="#kt_table_users .form-check-input"
+                                value="1"
+                              />
+                            </div>
+                          </th>
+                          <th class="min-w-125px">User</th>
+                          <th class="min-w-125px">Role</th>
+                          <th class="min-w-125px">Last login</th>
+                          <th class="min-w-125px">Two-step</th>
+                          <th class="min-w-125px">Joined Date</th>
+                          <th class="text-end min-w-100px">Actions</th>
+                        </tr>
+                        <!--end::Table row-->
+                      </thead>
+                      <!--end::Table head-->
+                      <!--begin::Table body-->
+                      <tbody class="text-gray-600 fw-bold">
+                        <!--begin::Table row-->
+                        <tr>
+                          <!--begin::Checkbox-->
+                          <td>
+                            <div
+                              class="form-check form-check-sm form-check-custom form-check-solid"
+                            >
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value="1"
+                              />
+                            </div>
+                          </td>
+                          <!--end::Checkbox-->
+                          <!--begin::User=-->
+                          <td class="d-flex align-items-center">
+                            <!--begin:: Avatar -->
+                            <div
+                              class="symbol symbol-circle symbol-50px overflow-hidden me-3"
+                            >
+                              <a
+                                href="./pages/users/view.html"
+                              >
+                                <div class="symbol-label">
+                                  <img
+                                    src="assets/media/avatars/300-6.jpg"
+                                    alt="Emma Smith"
+                                    class="w-100"
+                                  />
+                                </div>
+                              </a>
+                            </div>
+                            <!--end::Avatar-->
+                            <!--begin::User details-->
+                            <div class="d-flex flex-column">
+                              <a
+                                href="./pages/users/view.html"
+                                class="text-gray-800 text-hover-primary mb-1"
+                                >Emma Smith</a
+                              >
+                              <span>e.smith@kpmg.com.au</span>
+                            </div>
+                            <!--begin::User details-->
+                          </td>
+                          <!--end::User=-->
+                          <!--begin::Role=-->
+                          <td>Administrator</td>
+                          <!--end::Role=-->
+                          <!--begin::Last login=-->
+                          <td>
+                            <div class="badge badge-light fw-bolder">
+                              Yesterday
+                            </div>
+                          </td>
+                          <!--end::Last login=-->
+                          <!--begin::Two step=-->
+                          <td></td>
+                          <!--end::Two step=-->
+                          <!--begin::Joined-->
+                          <td>15 Apr 2021, 10:30 am</td>
+                          <!--begin::Joined-->
+                          <!--begin::Action=-->
+                          <td class="text-end">
+                            <a
+                              href="#"
+                              class="btn btn-light btn-active-light-primary btn-sm"
+                              data-kt-menu-trigger="click"
+                              data-kt-menu-placement="bottom-end"
+                              >Actions
+                              <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                              <span class="svg-icon svg-icon-5 m-0">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <!--end::Svg Icon--></a
+                            >
+                            <!--begin::Menu-->
+                            <div
+                              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4"
+                              data-kt-menu="true"
+                            >
+                              <!--begin::Menu item-->
+                              <div class="menu-item px-3">
+                                <a
+                                  href="./pages/users/view.html"
+                                  class="menu-link px-3"
+                                  >Edit</a
+                                >
+                              </div>
+                              <!--end::Menu item-->
+                              <!--begin::Menu item-->
+                              <div class="menu-item px-3">
+                                <a
+                                  href="#"
+                                  class="menu-link px-3"
+                                  data-kt-users-table-filter="delete_row"
+                                  >Delete</a
+                                >
+                              </div>
+                              <!--end::Menu item-->
+                            </div>
+                            <!--end::Menu-->
+                          </td>
+                          <!--end::Action=-->
+                        </tr>
+                        <!--end::Table row-->
+                
+                   
+                   
+                        <!--begin::Table row-->
+                        <tr>
+                          <!--begin::Checkbox-->
+                          <td>
+                            <div
+                              class="form-check form-check-sm form-check-custom form-check-solid"
+                            >
+                              <input
+                                class="form-check-input"
+                                type="checkbox"
+                                value="1"
+                              />
+                            </div>
+                          </td>
+                          <!--end::Checkbox-->
+                          <!--begin::User=-->
+                          <td class="d-flex align-items-center">
+                            <!--begin:: Avatar -->
+                            <div
+                              class="symbol symbol-circle symbol-50px overflow-hidden me-3"
+                            >
+                              <a
+                                href="./pages/users/view.html"
+                              >
+                                <div
+                                  class="symbol-label fs-3 bg-light-warning text-warning"
+                                >
+                                  C
+                                </div>
+                              </a>
+                            </div>
+                            <!--end::Avatar-->
+                            <!--begin::User details-->
+                            <div class="d-flex flex-column">
+                              <a
+                                href="./pages/users/view.html"
+                                class="text-gray-800 text-hover-primary mb-1"
+                                >Mikaela Collins</a
+                              >
+                              <span>mikaela@pexcom.com</span>
+                            </div>
+                            <!--begin::User details-->
+                          </td>
+                          <!--end::User=-->
+                          <!--begin::Role=-->
+                          <td>Administrator</td>
+                          <!--end::Role=-->
+                          <!--begin::Last login=-->
+                          <td>
+                            <div class="badge badge-light fw-bolder">
+                              5 days ago
+                            </div>
+                          </td>
+                          <!--end::Last login=-->
+                          <!--begin::Two step=-->
+                          <td></td>
+                          <!--end::Two step=-->
+                          <!--begin::Joined-->
+                          <td>25 Oct 2021, 11:05 am</td>
+                          <!--begin::Joined-->
+                          <!--begin::Action=-->
+                          <td class="text-end">
+                            <a
+                              href="#"
+                              class="btn btn-light btn-active-light-primary btn-sm"
+                              data-kt-menu-trigger="click"
+                              data-kt-menu-placement="bottom-end"
+                              >Actions
+                              <!--begin::Svg Icon | path: icons/duotune/arrows/arr072.svg-->
+                              <span class="svg-icon svg-icon-5 m-0">
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  width="24"
+                                  height="24"
+                                  viewBox="0 0 24 24"
+                                  fill="none"
+                                >
+                                  <path
+                                    d="M11.4343 12.7344L7.25 8.55005C6.83579 8.13583 6.16421 8.13584 5.75 8.55005C5.33579 8.96426 5.33579 9.63583 5.75 10.05L11.2929 15.5929C11.6834 15.9835 12.3166 15.9835 12.7071 15.5929L18.25 10.05C18.6642 9.63584 18.6642 8.96426 18.25 8.55005C17.8358 8.13584 17.1642 8.13584 16.75 8.55005L12.5657 12.7344C12.2533 13.0468 11.7467 13.0468 11.4343 12.7344Z"
+                                    fill="black"
+                                  />
+                                </svg>
+                              </span>
+                              <!--end::Svg Icon--></a
+                            >
+                            <!--begin::Menu-->
+                            <div
+                              class="menu menu-sub menu-sub-dropdown menu-column menu-rounded menu-gray-600 menu-state-bg-light-primary fw-bold fs-7 w-125px py-4"
+                              data-kt-menu="true"
+                            >
+                              <!--begin::Menu item-->
+                              <div class="menu-item px-3">
+                                <a
+                                  href="./pages/users/view.html"
+                                  class="menu-link px-3"
+                                  >Edit</a
+                                >
+                              </div>
+                              <!--end::Menu item-->
+                              <!--begin::Menu item-->
+                              <div class="menu-item px-3">
+                                <a
+                                  href="#"
+                                  class="menu-link px-3"
+                                  data-kt-users-table-filter="delete_row"
+                                  >Delete</a
+                                >
+                              </div>
+                              <!--end::Menu item-->
+                            </div>
+                            <!--end::Menu-->
+                          </td>
+                          <!--end::Action=-->
+                        </tr>
+                        <!--end::Table row-->
+                   
+                      </tbody>
+                      <!--end::Table body-->
+                    </table>
+                    <!--end::Table-->
+                  </div>
+                  <!--end::Card body-->
+                </div>
+                <!--end::Card-->
               </div>
               <!--end::Container-->
             </div>
@@ -9756,7 +9825,8 @@ License: For each use you must have a valid license purchased only from above li
     <!--end::Chat drawer-->
     <!--end::Drawers-->
     <!--end::Main-->
-
+  
+   
     <!--begin::Scrolltop-->
     <div id="kt_scrolltop" class="scrolltop" data-kt-scrolltop="true">
       <!--begin::Svg Icon | path: icons/duotune/arrows/arr066.svg-->
@@ -13355,10 +13425,7 @@ License: For each use you must have a valid license purchased only from above li
                         <!--end::Checkbox-->
                         <!--begin::Avatar-->
                         <div class="symbol symbol-35px symbol-circle">
-                          <span
-                            class="symbol-label bg-light-primary text-primary fw-bold"
-                            >N</span
-                          >
+                          <img alt="Pic" src="assets/media/avatars/300-9.jpg" />
                         </div>
                         <!--end::Avatar-->
                         <!--begin::Details-->
@@ -13366,10 +13433,10 @@ License: For each use you must have a valid license purchased only from above li
                           <a
                             href="#"
                             class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2"
-                            >Neil Owen</a
+                            >Francis Mitcham</a
                           >
                           <div class="fw-bold text-muted">
-                            owen.neil@gmail.com
+                            f.mitcham@kpmg.com.au
                           </div>
                         </div>
                         <!--end::Details-->
@@ -14182,7 +14249,7 @@ License: For each use you must have a valid license purchased only from above li
                   <div class="d-flex align-items-center">
                     <!--begin::Avatar-->
                     <div class="symbol symbol-35px symbol-circle">
-                      <img alt="Pic" src="assets/media/avatars/300-12.jpg" />
+                      <img alt="Pic" src="assets/media/avatars/300-25.jpg" />
                     </div>
                     <!--end::Avatar-->
                     <!--begin::Details-->
@@ -14190,9 +14257,9 @@ License: For each use you must have a valid license purchased only from above li
                       <a
                         href="#"
                         class="fs-5 fw-bolder text-gray-900 text-hover-primary mb-2"
-                        >Ana Crown</a
+                        >Brian Cox</a
                       >
-                      <div class="fw-bold text-muted">ana.cf@limtel.com</div>
+                      <div class="fw-bold text-muted">brian@exchange.com</div>
                     </div>
                     <!--end::Details-->
                   </div>
@@ -14260,10 +14327,11 @@ License: For each use you must have a valid license purchased only from above li
     <!--end::Global Javascript Bundle-->
     <!--begin::Page Vendors Javascript(used by this page)-->
     <script src="assets/plugins/custom/datatables/datatables.bundle.js"></script>
-    <script src="assets/plugins/custom/formrepeater/formrepeater.bundle.js"></script>
     <!--end::Page Vendors Javascript-->
     <!--begin::Page Custom Javascript(used by this page)-->
-    <script src="assets/js/custom/apps/ecommerce/catalog/save-product.js"></script>
+    <script src="assets/js/custom/apps/user-management/users/list/table.js"></script>
+    <script src="assets/js/custom/apps/user-management/users/list/export-users.js"></script>
+    <script src="assets/js/custom/apps/user-management/users/list/add.js"></script>
     <script src="assets/js/widgets.bundle.js"></script>
     <script src="assets/js/custom/widgets.js"></script>
     <script src="assets/js/custom/apps/chat/chat.js"></script>
