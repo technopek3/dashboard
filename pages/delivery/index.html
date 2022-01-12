@@ -7026,7 +7026,7 @@ License: For each use you must have a valid license purchased only from above li
                   <h1
                     class="d-flex align-items-center text-dark fw-bolder fs-3 my-1"
                   >
-                    Orders
+                    Delivery Men
                   </h1>
                   <!--end::Title-->
                   <!--begin::Separator-->
@@ -7052,7 +7052,7 @@ License: For each use you must have a valid license purchased only from above li
                     <!--end::Item-->
                     
                     <!--begin::Item-->
-                    <li class="breadcrumb-item text-dark">Orders</li>
+                    <li class="breadcrumb-item text-dark">Delivery men list</li>
                     <!--end::Item-->
                   </ul>
                   <!--end::Breadcrumb-->
@@ -7111,7 +7111,7 @@ License: For each use you must have a valid license purchased only from above li
                           type="text"
                           data-kt-ecommerce-product-filter="search"
                           class="form-control form-control-solid w-250px ps-14"
-                          placeholder="Search Order"
+                          placeholder="Search delivery man"
                         />
                       </div>
                       <!--end::Search-->
@@ -7132,18 +7132,17 @@ License: For each use you must have a valid license purchased only from above li
                         >
                           <option></option>
                           <option value="all">All</option>
-                          <option value="published">Published</option>
-                          <option value="scheduled">Scheduled</option>
-                          <option value="inactive">Inactive</option>
+                          <option value="published">Active</option>
+                          <option value="scheduled">Confirmed</option>
                         </select>
                         <!--end::Select2-->
                       </div>
                       <!--begin::Add product-->
-                      <!-- <a
-                        href="./pages/orders/add-order.html"
+                      <a
+                        href="./pages/delivery/add-delivery.html"
                         class="btn btn-primary"
-                        >Add Order</a
-                      > -->
+                        >Add Delivery man</a
+                      >
                       <!--end::Add product-->
                     </div>
                     <!--end::Card toolbar-->
@@ -7175,12 +7174,12 @@ License: For each use you must have a valid license purchased only from above li
                               />
                             </div>
                           </th>
-                          <th class="min-w-200px">Date</th>
-                          <th class="text-start min-w-100px">User Info</th>
-                          <th class="text-start min-w-70px">Address</th>
-                          <th class="text-start min-w-100px">Price</th>
-                          <th class="text-start min-w-100px">Order stutus</th>
-                          <th class="text-start min-w-100px">Delivery status</th>
+                          <th class="min-w-200px">Name</th>
+                          <th class="text-start min-w-100px">Address</th>
+                          <th class="text-start min-w-70px">Orders delivered</th>
+                          <th class="text-start min-w-100px">Orders returned</th>
+                          <th class="text-start min-w-100px">Active</th>
+                          <th class="text-start min-w-100px">Confirmed</th>
                           <th class="text-start min-w-70px">Actions</th>
                         </tr>
                         <!--end::Table row-->
@@ -7205,81 +7204,36 @@ License: For each use you must have a valid license purchased only from above li
                           <!--end::Checkbox-->
                           <!--begin::Category=-->
                           <td>
-                            <div class="d-flex align-items-center">
-                              <!--begin::Thumbnail-->
-                              <a
-                                href="./pages/products/edit-product.html"
-                                class="symbol symbol-50px"
-                              >
-                                <span
-                                  class="symbol-label"
-                                  style="
-                                    background-image: url(assets/media//stock/ecommerce/1.gif);
-                                  "
-                                ></span>
-                              </a>
-                              <!--end::Thumbnail-->
-                              <div class="ms-5">
-                                <!--begin::Title-->
-                                <a
-                                  href="./pages/products/edit-product.html"
-                                  class="text-gray-800 text-hover-primary fs-5 fw-bolder"
-                                  data-kt-ecommerce-product-filter="product_name"
-                                  >2022/01/13 15:30:00</a
-                                >
-                                <!--end::Title-->
-                              </div>
-                            </div>
+                            Jane doe
                           </td>
                           <!--end::Category=-->
                           <!--begin::SKU=-->
                           <td>
-                            <div class="m-0 p-0">
-                                <p class="m-0 p-0">
-                                    <b class='fw-bold text-dark'>name: </b>
-                                    John Doe
-                                </p>
-                                <p class="m-0 p-0">
-                                    <b class='fw-bold text-dark'>phone: </b>
-                                    0768543245
-                                </p>
-                                <p class="m-0 p-0">
-                                    <b class='fw-bold text-dark'>email: </b>
-                                    John.Doe@yahoo.com
-                                </p>
-                            </div>
+                            Hay salam agadir
                           </td>
                           <!--end::SKU=-->
                           <!--begin::Qty=-->
-                          <td class="text-start pe-0" data-order="6">
-                            <div>
-                                <p class="m-0 p-0">
-                                    <b class='fw-bold text-dark'>address on map: </b>
-                                    <a href="https://www.google.com/maps/?q=33.582001,-7.6" target="_blank"><i class="bi bi-geo-alt-fill text-primary fs-3"
-                                        ></i></a>
-                                </p>
-                                <p class="m-0 p-0">
-                                    <b class='fw-bold text-dark'>city: </b>
-                                    Agadir
-                                </p>
-                            </div>
+                          <td class="text-center">
+                            <span class="badge badge-light-success">
+                               5
+                            </span>
                           </td>
                           <!--end::Qty=-->
                           <!--begin::Price=-->
-                          <td class="text-start pe-0">
-                            <span class="fw-bolder text-dark">$277.00</span>
+                          <td class="text-center">
+                             <span class="badge badge-light-danger">
+                               5
+                            </span>
                           </td>
                           <!--end::Price=-->
                           <!--begin::Rating-->
                           <td class="text-center">
-                            <div class="badge badge-light-success">paid</div>
+                            <input class="form-check-input" type="checkbox" role="switch">
                           </td>
                           <!--end::Rating-->
                           <!--begin::Status=-->
-                          <td class="text-end pe-0" data-order="Inactive">
-                            <!--begin::Badges-->
-                            <div class="badge badge-light-danger">Inactive</div>
-                            <!--end::Badges-->
+                          <td>
+                            <input class="form-check-input" type="checkbox" checked role="switch">
                           </td>
                           <!--end::Status=-->
                           <!--begin::Action=-->
@@ -7315,7 +7269,7 @@ License: For each use you must have a valid license purchased only from above li
                               <!--begin::Menu item-->
                               <div class="menu-item px-3">
                                 <a
-                                  href="./pages/orders/edit-order.html"
+                                  href="./pages/delivery/edit-delivery.html"
                                   class="menu-link px-3"
                                   >Edit</a
                                 >
